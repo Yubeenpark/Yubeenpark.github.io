@@ -2,6 +2,11 @@ body.dark-theme {
 
 background:#1E1E1F;
 
+//background load
+.cssload-dot{ background:cadetblue;}
+
+.step{ border-top: 3px solid #aaa }
+
 a, span, p, h1, h2, h3, i, mark { color:#aaa; }
 
 svg { fill:#aaa; }
@@ -51,7 +56,9 @@ svg { fill:#aaa; }
   .inner-content { background:#313132; }
 }
 
-.transbox { background-color:rgba(64, 64, 64, 0.6); }
+.transbox { background-color:rgba(64, 64, 64, 0.6) ; 
+
+  border-bottom: 2px solid  rgba(49, 49, 49, 0.6) ;}
 
 .post-title,
 .info-box * {

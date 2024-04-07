@@ -1,22 +1,21 @@
-title: Example.com
-description: "Introduction for you blog"
-logo_img: "/assets/img/favicon.webp"
-profile_img: "/assets/img/profile.webp"
+title: Nutty.blog
+description: "자유로운 이야기"
+logo_img: "/assets/img/nutty_icon.png"
+profile_img: "/assets/img/profile.jpg"
 
 # Social Links
-email: example@gmail.com
-github_username: github
-twitter_username: twitter
-instagram_username: instagram
+email: yoobinpark@gmail.com
+github_username: yubeenpark
+instagram_username: ooybeen
 linkedin_username: linkedin
-facebook_username: facebook
+
 
 # External API
-giscus_repo:
-giscus_repoId:
-giscus_category:
-giscus_categoryId:
-goatcounter_code:
+giscus_repo: "Yubeenpark/Yubeenpark.github.io"
+giscus_repoId: "R_kgDOLlOA9Q"
+giscus_category: "Comments"
+giscus_categoryId: "DIC_kwDOLlOA9c4Cefl8"
+goatcounter_code: nuttyCheck
 google_analytics:
 
 # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -41,6 +40,9 @@ collections:
   pages:
     output: true
     permalink: /:path.html
+    
+plugins:
+ -  jekyll-seo-tag
 
 defaults:
   -
@@ -50,6 +52,8 @@ defaults:
     values:
       layout: "page"
       date: "1900-01-01"
+
+
 
 # Markdown newline activator 
 kramdown:

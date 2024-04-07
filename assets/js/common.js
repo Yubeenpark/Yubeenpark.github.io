@@ -278,7 +278,6 @@ function searchRelated(pages){
 
     var relatedPosts = [];
     var currPost = pages.find(obj => {return obj.url === location.pathname});
-
     let currTags = currPost.tags.split(', ');
     let currCategory = currPost.path.split(' > ').pop();
 
@@ -301,14 +300,17 @@ function searchRelated(pages){
 
         if (correlationScore == 0) continue;
 
-        relatedPosts.push({
-            'title': page.title,
-            'date': page.date,
-            'category': category,
-            'url': page.url,
-            'thumbnail': page.image,
-            'score': correlationScore
-        });
+        if (page.title !== 'Tags')
+        {
+            relatedPosts.push({
+                'title': page.title,
+                'date': page.date,
+                'category': category,
+                'url': page.url,
+                'thumbnail': page.image,
+                'score': correlationScore
+            });
+        } 
     }
 
     relatedPosts.sort(function (a, b) {
