@@ -10,6 +10,12 @@
         {%- assign page_type = "post" -%}
     {% endif %}
     <head>
+        <meta name="title" content="Nutty.blog | YubeenPark">
+        <meta name="description" content="자유로운 개발 이야기 ">
+        
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Nutty.blog | YubeenPark">
+        <meta property="og:image" content="{{'/assets/img/profile.jpg'}}">
         {% include head.html %}
         <link rel="preload" href="{{ site.profile_img }}" as="image">
         <link rel="stylesheet" href="{{ '/assets/css/style.css' }}">
