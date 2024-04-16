@@ -45,7 +45,7 @@ collections:
     permalink: /:path.html
     
 
-url: "https://yubeenpark.github.io/" # the base hostname & protocol for your site
+url: "https://yubeenpark.github.io" # the base hostname & protocol for your site
 ## - jekyll-sitemap 
 plugins:
   - jekyll-sitemap 
