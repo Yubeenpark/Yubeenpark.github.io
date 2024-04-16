@@ -44,8 +44,12 @@ collections:
     output: true
     permalink: /:path.html
     
+
+url: "https://yubeenpark.github.io/" # the base hostname & protocol for your site
+## - jekyll-sitemap 
 plugins:
- -  jekyll-seo-tag
+  - jekyll-sitemap 
+  - jekyll-seo-tag
 
 defaults:
   -
