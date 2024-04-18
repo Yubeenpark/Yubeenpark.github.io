@@ -50,6 +50,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap 
 
+date_format: "%Y-%M-%D"
+
 defaults:
   -
     scope:
@@ -57,7 +59,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      date: "1900-01-01"
+      date: "2024-01-01"
 
 
 
