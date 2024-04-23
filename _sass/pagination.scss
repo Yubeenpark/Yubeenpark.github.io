@@ -51,8 +51,8 @@
     display:block;
     background-size:cover;
     background-position:50% 50%;
-    width:300px;
-    aspect-ratio:1;
+    width:100%;
+    aspect-ratio:5/3;
     border-radius:0;
 
     &:hover { opacity:0.8; }
