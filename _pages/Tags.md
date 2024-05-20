@@ -7,6 +7,7 @@ tags:
     - 개발 공부
     - React.js
     - Frontend
+permalink: /Tags/
 bookmark: true
 date: 2024-01-02 19:20:23 +0900
 ---

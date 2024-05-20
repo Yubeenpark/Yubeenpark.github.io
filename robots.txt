@@ -4,3 +4,4 @@ Sitemap: https://yubeenpark.github.io/sitemap.xml
 Allow: /
 Allow: /ads.txt
 Disallow: /docs/
+Disallow: /Tags/
