@@ -1,9 +1,6 @@
 User-agent: *
-
-Allow: /ads.txt
-
+Allow: /ads
 Disallow: /docs/
 Disallow: /Tags/
-
 Sitemap: https://yubeenpark.github.io/sitemap.xml
 
