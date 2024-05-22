@@ -1,7 +1,1 @@
-
----
-permalink: /ads.txt
-layout: null
-robots-allow: True
----
-google. com, pub-2521881445582647, DIRECT, F08c47fec0942fa0
+google.com, pub-2521881445582647, DIRECT, f08c47fec0942fa0
