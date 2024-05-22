@@ -2,5 +2,6 @@
 ---
 permalink: /ads.txt
 layout: null
+robots-allow: True
 ---
 google. com, pub-2521881445582647, DIRECT, F08c47fec0942fa0
