@@ -1,9 +1,5 @@
 ---
 title: "골드 5 달성"
-tags:
-    - 코테 공부
-    - 개발 공부
-    - 백준
 date: "2024-05-17 21:42:23 +0900"
 thumbnail: "/Coding/Baekjoon/image.png"
 ---
