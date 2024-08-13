@@ -4,5 +4,5 @@ source "https://rubygems.org"
 gemspec
 
 gem "github-pages", group: :jekyll_plugins
-ruby '3.2.3'
+ruby '2.7.8'
 gem 'bundler', '~> 2.4'
