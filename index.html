@@ -1,0 +1,3996 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Home | Nutty</title>
+<meta name="generator" content="Jekyll v3.9.5">
+<meta property="og:title" content="Home">
+<meta name="author" content="Yubeenpark">
+<meta property="og:locale" content="ko">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="canonical" href="https://yubeenpark.github.io/jekyll-theme-yat/">
+<meta property="og:url" content="https://yubeenpark.github.io/jekyll-theme-yat/">
+<meta property="og:site_name" content="Nutty">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Home">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Yubeenpark"},"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Home","name":"Nutty","url":"https://yubeenpark.github.io/jekyll-theme-yat/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="canonical" href="https://yubeenpark.github.io">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://yubeenpark.github.io/jekyll-theme-yat/feed.xml" title="Nutty">
+<!-- Google tag (gtag.js) -->
+<script>
+  function initGoogleAnalytics() {
+    var doNotTrack = (window.doNotTrack === "1" || navigator.doNotTrack === "1" ||
+      navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1");
+    var enableDNT = "true" == "true";
+
+    if (!enableDNT || !doNotTrack) {
+      var measurementId = 'G-GJQXV24HLR';
+
+      (function(src) {
+        var tag = document.createElement('script');
+        tag.src = src;
+        tag.async = true;
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      })('https://www.googletagmanager.com/gtag/js?id=' + measurementId);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', measurementId);
+    }
+  }
+  window.addEventListener("load", initGoogleAnalytics);
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="Nutty" src="" onerror="this.style.display='none'">
+  Nutty
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/jekyll-theme-yat/about.html">ABOUT</a><a class="page-link" href="/jekyll-theme-yat/archives.html">ARCHIVES</a><a class="page-link" href="/jekyll-theme-yat/categories.html">CATEGORIES</a><a class="page-link" href="/jekyll-theme-yat/">HOME</a><a class="page-link" href="/jekyll-theme-yat/tags.html">TAGS</a>
+
+
+
+
+
+
+
+
+
+<div class="page-link" style="display: inline;">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<div class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="fr">
+          
+          <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" title="French">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ko">
+          
+          <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ru">
+          
+          <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" title="Russian">
+          
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'ko',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+</div>
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: url(/jekyll-theme-yat/assets/images/banners/sky.jpg)"></div>
+        <img class="img-placeholder" src="/jekyll-theme-yat/assets/images/banners/sky.jpg">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner"><div class="page-banner-default">
+            <h1 class="page-banner-heading">
+              ฅˆ‧⩊‧ˆฅ
+            </h1>
+            <h2 class="page-banner-subheading">
+              In theory, theory and practice are the same. In practice, they’re not.
+            </h2>
+          </div></div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="articles">
+  
+
+  
+
+
+  
+
+
+
+
+<div class="pagination">
+  <!-- Post list links -->
+  <ul class="post-list z-image-style">
+    <!-- Top list item --><!-- Normal list item -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/programmers/2024/08/12/1day.html">
+      협업환경 구성<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Aug 12, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/programmers/2024/08/12/1day.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://grepp-programmers.s3.amazonaws.com/production/file_resource/6737/Dev_Thumnail_Web_Full_Stack_4th.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/programmers/2024/08/12/1day.html">
+      <p>1. 포트폴리오
+
+프로젝트: 프로그램을 만들기 위한 일련의 프로세스
+
+소스구현과 더불어 기획, 설계, 테스트, 배포
+
+협업을 위한 공유가 필요하다.
+
+read.md 의 역할
+
+
+  완성된 프로그램의 설명서.
+  구현 중인 프로젝트의 현황.
+
+
+2. MarkUp vs MarkDown
+
+1.... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags"><a class="post-tag" href="/jekyll-theme-yat/tags.html#Programmers">#Programmers</a></div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/07/11/14502.html">
+      12865번 평범한 배낭<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Jul 11, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 5 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/07/11/14502.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/07/11/14502.html">
+      <p>
+  골드 V
+
+
+
+💡문제 분석 요약
+
+dp
+
+💡알고리즘 설계
+
+여러 아이템의 가치와 무게를 더해서 최종 값인 최대 가치를 가져와야 한다.
+
+여러 아이템의 무게의 합으로 계산해야 하며, 각 아이템이 다음 값에 영향을 주기 때문에 dp에 가깝다.
+
+제한사항:  제한 무게 내로 가방에 넣기.
+
+잘 알려진 문제이지만 잘 분석해보자.
+
+우선 dp이므로 dp를 설계... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#DP">#DP</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Gold">#Gold</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/react/2024/07/07/noamdcoder.md.html">
+      PRACTICE MOVIE APP<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Jul 07, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 8 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/react/2024/07/07/noamdcoder.md.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://nomadcoders.co/_next/image?url=https%3A%2F%2Fd1telmomo28umc.cloudfront.net%2Fmedia%2Fpublic%2Fthumbnails%2Freact-for-beginners.jpeg&w=750&q=75); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/react/2024/07/07/noamdcoder.md.html">
+      <p>useState(상태 초기값);
+
+
+  기능: 함수형 컴포넌트에서 상태를 관리함.
+  return : 상태 변수, 상태 업데이트하는 함수 반환.
+    
+      상태 변수: useState(초기값);으로 초기화할 수 있다.
+      상태 업데이트 함수: 새로운 상태 값을 받아서 상태를 업데이트 한다. 만약 업데이트 된다면, ... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#React">#React</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Frontend">#Frontend</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EB%85%B8%EB%A7%88%EB%93%9C%EC%BD%94%EB%8D%94">#노마드코더</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/06/12/9019.html">
+      9019번 DSLR<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Jun 12, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 5 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/06/12/9019.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/06/12/9019.html">
+      <p>
+  골드 IV
+
+
+문제 분석 요약
+
+BFS
+
+💡알고리즘 설계
+
+1~10000 미만의 십진수 내에서 탐색 가능하므로 다 탐색해도 괜찮은
+
+BFS를 사용한다.
+
+그리고 각 명령어를 수행한 뒤 적용 값으로 명령어를 계속 수행해야 하기 때문에 BFS로 탐구한다.
+
+D,S,L,R의 함수를 만들고 BFS로 적용값 중 a==b가 되는 경우를 찾는다.
+
+qu... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#BFS">#BFS</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Gold">#Gold</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/06/12/16928.html">
+      16928번 뱀과 사다리 게임<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Jun 12, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 4 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/06/12/16928.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/06/12/16928.html">
+      <p>
+  골드 V
+
+
+💡문제 분석 요약
+
+BFS
+
+💡알고리즘 설계
+
+움직이는 것은 그 전에 영향을 받으므로, 이전 값의 영향을 넣을 수 있는 bfs를 떠올렸으며, 여러 경우의 수를 따져가면서도 최소를 카운팅 해야하기에 dfs가 아닌 bfs로 풀었다.
+
+기본적으로 index =1에 1, 2에는 2값을 가지는 보드를 생성한 후, 뱀과 사다리로 연결되어 움직이는... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#BFS">#BFS</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Gold">#Gold</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/06/12/1389.html">
+      1389번 케빈 베이컨의 6단계 법칙<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Jun 12, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/06/12/1389.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/06/12/1389.html">
+      <p>
+  실버 I
+
+
+💡문제 분석 요약
+
+floyd-warshall
+
+플루이드-워셜
+
+💡알고리즘 설계
+
+플루이드 워셔로 모든 친구와 몇 단계로 알 수 있는지를 정리해야한다.
+
+들어오는 관계를 통해 INF로 초기화한 bacon 배열에 관계를 1로 추가한다.
+
+이후 플루이드 워셜 알고리즘을 통해, 관계의 최솟값을 넣는다.
+
+다 정리되면, inf인 값은 관계가 없는 것으로 0으로 ... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#floyd-warshall">#floyd-warshall</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Silver">#Silver</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/06/11/11403.html">
+      11403번 경로찾기<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Jun 11, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/06/11/11403.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/06/11/11403.html">
+      <p>11403번 경로찾기
+
+
+  실버 I
+
+
+💡문제 분석 요약
+
+floyd-warshall
+
+플루이드-워셜
+
+💡알고리즘 설계
+
+플루이드 워셔로 모든 그래프로 갈 수 있는 가중치를 정리한다.
+
+dist를 inf로 초기화 한다.
+
+k를 거쳐서 i→j로 가는거와 i→j로 갈 수 있는 가중치 중 최솟값을 [i][j]에 넣는다.
+
+이때, inf로 나온다는 건 i→j로 가는... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#floyd-warshall">#floyd-warshall</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Gold">#Gold</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/06/10/5430.html">
+      5430번 AC<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Jun 10, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 5 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/06/10/5430.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/06/10/5430.html">
+      <p>
+  골드 V
+
+
+💡문제 분석 요약
+
+구현
+
+💡알고리즘 설계
+
+함수 명령어는 list로 만들어 하나씩 돌면서 수행한다.
+
+numbers는 list로 만들어 주기 위해 앞 뒤의 괄호를 제거하고 (replace로 대체) 만약 제거하니 아무것도 안남으면 [] split이 불가하므로 빈 리스트를 할당한다.
+
+R인 경우, 실제로 뒤집는게 아... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EA%B5%AC%ED%98%84">#구현</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Gold">#Gold</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/06/09/11026.html">
+      10026번 적록색약<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Jun 09, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 8 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/06/09/11026.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/06/09/11026.html">
+      <p>
+  골드 V
+
+
+💡문제 분석 요약
+
+BFS
+
+💡알고리즘 설계
+
+우선 B는 무조건 세야하는 파트이므로, B를 찾을때 B의 구역을 찾아 숫자를 알 수 있게 find함수에서 실행한다.
+
+방문하지 않은 구역이 없도록 find함수에는 방문하지 않은게 있다면 queue에 넣고 True를 반환한다.
+
+💡코드
+
+더 효율적인 방법으론, G를 찾았을때 R로 변환시켜준다.
+... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#BFS">#BFS</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Gold">#Gold</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/27/14940.html">
+      14940번 쉬운 최단거리<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 27, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 5 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/27/14940.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/27/14940.html">
+      <p>
+  실버 I
+
+
+💡문제 분석 요약
+
+BFS
+
+💡알고리즘 설계
+
+BFS를 통해 구현했다.
+
+2인 항목을 찾아서 queue에 먼저 넣는다.
+
+위 아래 오른쪽 왼쪽의 x,y값을 확인한다.
+
+vistied를 통해 방문 여부를 체크하고, 방문하지 않았고+값이 1이라면 queue에 넣어준다.
+
+만약 방문하지 않았는데 갈 수 있는 땅이라면, 값을 -1로 바꿔주고 출력한다.
+
+💡... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#BFS">#BFS</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Silver">#Silver</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/27/12865.html">
+      12865번 평범한 배낭<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 27, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 7 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/27/12865.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/27/12865.html">
+      <p>
+  골드 V
+
+
+💡문제 분석 요약
+
+BFS, 백트래킹, 브루트포스
+
+💡알고리즘 설계
+
+3개의 벽을 세우고 세웠을 때 안전구역을 센다.
+
+여러 경우의 수 중에서 안전구역이 가장 큰 것을 return한다.
+
+여기서 3개의 벽을 세우는 방법은 2가지다.
+
+
+  백트래킹
+  
+    combinations를 활용한 모든 경우 탐색하기.
+  
+  백 트래킹
+... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Brute%20Force">#Brute Force</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Back%20Tracking">#Back Tracking</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Gold">#Gold</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/27/1074.html">
+      1074번 Z<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 27, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 9 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/27/1074.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/27/1074.html">
+      <p>1074번 Z
+
+
+  골드 V
+
+
+💡문제 분석 요약
+
+분할 정복
+
+💡알고리즘 설계
+
+전체 탐색을 하려면 연산이 많아지므로 분할 탐색 알고리즘을 사용해야한다.
+
+이때, 모든 부분을 분할해서 탐색하면 안된다. (시간 복잡도 개선이 없기에)
+
+DP와 반대로 Top-Down 방식이기에 전체→작은 부분으로 내려간다.
+
+일단 4부분으로 자르고 그 자른 범위에 r,c가 있다... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EB%B6%84%ED%95%A0%20%EC%A0%95%EB%B3%B5">#분할 정복</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Gold">#Gold</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/20/2805.html">
+      2805번 나무자르기<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 20, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 4 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/20/2805.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/20/2805.html">
+      <p>
+  실버 II
+
+
+💡문제 분석 요약
+
+binary search 이진탐색
+
+💡알고리즘 설계
+
+절단기 범위를 start,end로 설정한다.
+
+이진 탐색으로 해당 길이의 절단기로 잘랐을 때 모을 수 있는 나무를 cut에 넣고, 만약 cut이 크면 범위를 줄여줘야 하므로 end = mid -1로 설정한다.
+
+여기서 절단기의 최댓값을 알아야 하므... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#binary%20search">#binary search</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Silver">#Silver</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/20/2630.html">
+      2630번 색종이 만들기<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 20, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 4 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/20/2630.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/20/2630.html">
+      <p>
+  실버 II
+
+
+💡문제 분석 요약
+
+divide conquer 분할 정복
+
+💡알고리즘 설계
+
+우선 4개로 쪼갠 뒤, 쪼갠 부분의 시작을 나머지와 비교한다.
+
+만약 다르다면 현재 탐색하는 부분을 4개로 쪼갠 뒤, 위를 반복한다.
+
+💡코드
+
+import sys
+input= sys.stdin.readline
+cut = [1,4,5,16,32,64,128... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EB%B6%84%ED%95%A0%20%EC%A0%95%EB%B3%B5">#분할 정복</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Silver">#Silver</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/18/7576.html">
+      7576번 토마토<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 18, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 6 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/18/7576.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/18/7576.html">
+      <p>
+  골드 V
+
+
+💡문제 분석 요약
+
+BFS
+
+💡알고리즘 설계
+
+모든 토마토를 보고 안익었으면 zero+=1, 상자면 box+=1로 값을 파악한다.
+
+만약 안익은 토마토가 없다면 0을 출력한다.
+
+익은 토마토를 찾은 뒤, queue에 익은 여부와 값, 날짜를 넣어준다.
+
+queue에 값이 없을때 까지 왼쪽부터 꺼낸다.
+
+상자가 아닌 경우 (not -1) ... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#BFS">#BFS</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Gold">#Gold</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/18/1697.html">
+      1931번 회의실 배정<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 18, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/18/1697.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/18/1697.html">
+      <p>
+  실버 I
+
+
+💡문제 분석 요약
+
+BFS or math
+
+💡알고리즘 설계
+
+queue에 n값을 추가한 뒤, k값이 될 수 있는 방법을 각각 넣어서 확인한다.
+
+이때, 재방문하지않도록 visit이라는 배열로 방문 여부를 확인한다.
+
+💡코드
+
+from collections import deque
+n,k = map(int,input().strip().split())
+queue =... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#BFS">#BFS</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Silver">#Silver</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/17/GoldV.html">
+      골드 5 달성<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 17, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/17/GoldV.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(/jekyll-theme-yat/assets/images/image.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/17/GoldV.html">
+      <p>
+5월 2일 정도에 실버1이었다가 어제 드디어 달성했다.
+뿌-듯☺️
+
+ <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/06/1160.html">
+      1160번 구간 합 구하기 5<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 06, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 4 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/06/1160.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/06/1160.html">
+      <p>
+  실버 I
+
+
+💡문제 분석 요약
+
+다이내믹 프로그래밍
+
+💡알고리즘 설계
+
+구간합을 dp에 저장한다.
+
+주어진 범위를 구하기 위해, 포함되지 않는 공간을 빼서 구한다.
+
+참고한 블로그
+
+https://chanhuiseok.github.io/posts/baek-19/
+
+💡코드
+
+import sys
+input = sys.stdin.readline
+N, M = map(int, ... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#DP">#DP</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Silver">#Silver</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/05/1931.html">
+      1931번 회의실 배정<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 05, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/05/1931.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/05/1931.html">
+      <p>1931번 회의실 배정
+
+
+  실버 I
+
+
+💡문제 분석 요약
+
+Greedy+sorting
+
+💡알고리즘 설계
+
+끝나는 시간이 빨라야, 더 많은 회의를 집어 넣을 수 있다.
+
+따라서 끝나는 시간으로 우선 정렬하고, 끝나는 시간이 같을 경우 시작 시간이 빠른 것으로 정렬한다.
+
+이후 끝나는 시간이 빠른 것부터 우선 넣고, 이후 넣을 수 있는 것을 차례... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Greedy">#Greedy</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Silver">#Silver</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/05/1149.html">
+      1149번 RGB거리<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 05, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 5 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/05/1149.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/05/1149.html">
+      <p>
+  실버 I
+
+
+💡문제 분석 요약
+
+동적 계획을 사용한 문제 풀이
+
+💡알고리즘 설계
+
+이중 리스트 a에 입력 값을 받는다.
+
+a를 돌면서 이전 값의 최솟값을 더한 값을 구하여 현재 돌고 있는 곳에 업데이트 한다.
+
+모든 값을 돌고 난 뒤, n번을 돌아 저장된 값이 있는 n-1 배열에 있는 값 중 최솟값을 출력한다.
+
+💡코드
+
+import sys
+input = ... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#DP">#DP</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Silver">#Silver</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/03/11053.html">
+      11053번 가장 긴 증가하는 부분 수열<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> May 03, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 6 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/05/03/11053.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/05/03/11053.html">
+      <p>11053번 가장 긴 증가하는 부분 수열
+
+
+  실버 II
+
+
+💡문제 분석 요약
+
+동적 계획을 사용한 문제 풀이
+
+💡알고리즘 설계
+
+현재 위치(i) 의 값과 그 전에 있던 값(1~j)들을 모두 비교한다.
+
+이때 그 전에 있던 값이 작으면, 이전 값의 인덱스를 가진 dp에서의 최댓값에 1을 더한 것을 dp[i] 값으로 설정한다.
+
+💡코드
+
+imp... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#DP">#DP</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#Silver">#Silver</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/04/22/4weeks.html">
+      2024.04-4<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Apr 22, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 45 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/04/22/4weeks.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/04/22/4weeks.html">
+      <p>2024.04-4
+
+2024년 4월 22일
+
+1. 11047번 동전 0
+
+
+  실버 IV
+
+
+💡문제 분석 요약
+
+원하는 값과 주어진 값으 나눗셈과 나머지로 푸는 문제.
+
+여기서 i≥2인경우 Ai가 Ai-2라서 쉽게 풀린다.
+
+💡알고리즘 설계
+
+결국 500원 1개= 100원 5개 가치이므로 금액이 높은 순으로 최대한 값을 빼면서 최솟값을 구하자.
+
+💡... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/04/15/3weeks.html">
+      2024.04-3<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Apr 15, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 47 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/04/15/3weeks.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/04/15/3weeks.html">
+      <p>2024년 4월 15일
+
+1. 10773번 제로
+
+단순하게 0일때 리스트에 있는 마지막을 제거하면 될 것 같아 바로 구현했다. 근데 int(input())으로 입력을 받으니 너무 느렸다. input=sys.stdin.readline()으로 받으니 시간이 600배 빨라졌다..!
+
+알게 된 점
+
+
+  sys.stdin.readline() 이 inpu... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/book/2024/04/12/designtrap.html">
+      디자인트랩<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Apr 12, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/book/2024/04/12/designtrap.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788934961581.jpg); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/book/2024/04/12/designtrap.html">
+      <p>
+  가입시: 미끼(한달 무료 이벤트) 연기(작은 글자의 약관) 해지시:미끼(해지하면 버리게될 혜택) 연기(겁나 찾이 어려운 해지 방법)
+    
+      미끼= 노력x 직관 빠름 무의식
+      연기=노력,이성,느림,의식
+    
+  
+  슬롯머신 디자인
+    
+      빠르게 연속적으로 물흐르듯 몰... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#book">#book</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#markdown">#markdown</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/04/10/2weeks.html">
+      2024.04-2<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Apr 10, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 27 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/04/10/2weeks.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/04/10/2weeks.html">
+      <p>2024년 4월 10일
+
+1. 11650번 좌표정렬하기
+
+바로 푼 문제!
+
+import sys
+num = int(input())
+nums=[]
+for idx in range(num):
+    x, y =map(int,sys.stdin.readline().strip().split())
+    nums.append([x,y])
+
+nums.sort(key =... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="post-item ">
+  <h2 class="post-title">
+    <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/04/04/4month1week.html">
+      2024.04-1<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+  </h2>
+  <div class="post-meta">
+    <span class="post-date"><i class="fa fa-calendar"></i> Apr 04, 2024</span><span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 20 mins</span>
+  </div>
+  <div class="post-excerpt">
+<a class="post-image" href="/jekyll-theme-yat/baekjoon/2024/04/04/4month1week.html" style="flex: 0 1 38.2%">
+      <div style="background-image: url(https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png); height: 160px"></div>
+    </a><a class="post-text" href="/jekyll-theme-yat/baekjoon/2024/04/04/4month1week.html">
+      <p>2024년 4월 4일
+
+1. 2798 블랙잭
+
+.-&lt;아이디어는 어차피 3개 뽑는거니까 combinations써서 조합 구하고, sum구하고 그 중에서 filter를 통해 거르고 가장 큰거 뽑자! 라고 했는데, 코드는 짧지만 속도가 좀 느리다. 아무래도 전체를 다 구하려니까 그러는 것 같음.
+
+코드비교
+
+다른 사람들 코드를 보면,  우선 정렬한... <span class="read_more">Read More</span></p>
+    </a>
+  </div>
+  <div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a>
+</div>
+</li>
+</ul>
+
+  <!-- Pagination links -->
+</div>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="common-list">
+  <ul>
+    <li>
+      <a href="/jekyll-theme-yat/index.html">
+        All<span>26</span>
+      </a>
+    </li>
+
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Baekjoon">
+          Baekjoon <span>23</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-Programmers">
+          Programmers <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-React">
+          React <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/jekyll-theme-yat/categories.html#h-book">
+          book <span>1</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Unpublished Work <span class="copyleft">©</span> 2017-2024 Yubeenpark</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/jekyll-theme-yat/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://yubeenpark.github.io/jekyll-theme-yat/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yubeenpark.github.io/jekyll-theme-yat/" rel="alternate" type="text/html" hreflang="ko" /><updated>2024-08-13T12:21:24+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/feed.xml</id><title type="html">Nutty</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Yubeenpark</name></author><entry><title type="html">협업환경 구성</title><link href="https://yubeenpark.github.io/jekyll-theme-yat/programmers/2024/08/12/1day.html" rel="alternate" type="text/html" title="협업환경 구성" /><published>2024-08-12T00:00:00+00:00</published><updated>2024-08-12T00:00:00+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/programmers/2024/08/12/1day</id><content type="html" xml:base="https://yubeenpark.github.io/jekyll-theme-yat/programmers/2024/08/12/1day.html"><![CDATA[<h1 id="1-포트폴리오">1. 포트폴리오</h1>
+
+<p>프로젝트: 프로그램을 만들기 위한 일련의 프로세스</p>
+
+<p>소스구현과 더불어 기획, 설계, 테스트, 배포</p>
+
+<p>협업을 위한 공유가 필요하다.</p>
+
+<p><a href="http://read.md">read.md</a> 의 역할</p>
+
+<ol>
+  <li>완성된 프로그램의 설명서.</li>
+  <li>구현 중인 프로젝트의 현황.</li>
+</ol>
+
+<h1 id="2-markup-vs-markdown">2. MarkUp vs MarkDown</h1>
+
+<h2 id="1-markup">1. MarkUp</h2>
+
+<hr />
+
+<ul>
+  <li>HTML(Hyper Text MarkUp Language)
+    <ul>
+      <li>프로그래밍 언어x, 웹페이지가 어떻게 구조화 되어있는지 브라우저가 알 수 있게 하는 언어!</li>
+      <li>각각의 태그로 구조를 세운다.
+        <ul>
+          <li>
+            <p> </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3-markdown">3. MarkDown</h2>
+
+<hr />
+
+<ul>
+  <li>MarkUp 언어의 일종. 태그가 빠져 읽고 쓰기 쉬운 문서 양식.(웹 전용 텍스트)
+    <ul>
+      <li>위키백과, tistory, notion, github</li>
+    </ul>
+  </li>
+  <li>문법
+    <ul>
+      <li>
+        <h1 id="글씨-1단계-제목">글씨: 1단계 제목</h1>
+      </li>
+      <li>
+        <h2 id="글씨-2단계-제목">글씨: 2단계 제목</h2>
+      </li>
+      <li><em>글씨</em>, <em>글씨</em>: 기울여</li>
+      <li><strong>글씨</strong>: 굵게</li>
+      <li><strong><em>글씨</em></strong>: 귀울여+굵게</li>
+      <li><code class="language-plaintext highlighter-rouge">코드</code>: 코드</li>
+      <li><a href="링크주소">링크내용</a>: 링크생성</li>
+      <li>
+        <blockquote>
+          <p>: 인용구 (강조)</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="4버전">4.버전</h1>
+
+<hr />
+
+<ul>
+  <li>유의미한 수정</li>
+  <li>무엇이 바뀌었는지 잘 적어놓고 관리해야한다.</li>
+  <li>버전 관리 시스템(version control system)
+    <ul>
+      <li>버전 관리</li>
+      <li>백업 복구</li>
+      <li>협업 (선택)</li>
+      <li>종류
+        <ul>
+          <li>로컬 vcs: 내 컴퓨터 (로컬), 협업X</li>
+          <li>중앙집중식 vcs: 협업 O, 필요한 파일만
+            <ul>
+              <li>SVN, CVS</li>
+            </ul>
+          </li>
+          <li>분산 vcs: 통째로→ 안꼬인다(안정적)
+            <ul>
+              <li>Git</li>
+              <li>Mecurial</li>
+              <li>Bazaar</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>Yubeenpark</name></author><category term="Programmers" /><category term="Programmers" /><summary type="html"><![CDATA[1. 포트폴리오]]></summary></entry><entry><title type="html">12865번 평범한 배낭</title><link href="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/07/11/14502.html" rel="alternate" type="text/html" title="12865번 평범한 배낭" /><published>2024-07-11T00:00:00+00:00</published><updated>2024-07-11T00:00:00+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/07/11/14502</id><content type="html" xml:base="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/07/11/14502.html"><![CDATA[<blockquote>
+  <p><strong>골드 V</strong></p>
+
+</blockquote>
+
+<h1 id="문제-분석-요약">💡<strong>문제 분석 요약</strong></h1>
+
+<p>dp</p>
+
+<h1 id="알고리즘-설계">💡<strong>알고리즘 설계</strong></h1>
+
+<p>여러 아이템의 가치와 무게를 더해서 최종 값인 최대 가치를 가져와야 한다.</p>
+
+<p>여러 아이템의 무게의 합으로 계산해야 하며, 각 아이템이 다음 값에 영향을 주기 때문에 dp에 가깝다.</p>
+
+<p>제한사항:  제한 무게 내로 가방에 넣기.</p>
+
+<p>잘 알려진 문제이지만 잘 분석해보자.</p>
+
+<p>우선 dp이므로 dp를 설계한다. 이때, dp에 저장된 값은 값이어야하며, dp의 각 칸의 위치는 dp의 값을 만드는 매개체로 구성한다. 여기서 매개체는 어느 아이템이냐가 주된 것이며, 제한사항이 있기에 무게도 고려해야하므로 넣는다.</p>
+
+<p>따라서 dp의 구성을 dp[아이템][무게]=가치 로 설정한다.</p>
+
+<p>[몇번째 아이템까지 고려했을때][해당하는 무게] = 총 가치 이며</p>
+
+<p>각 물건을 순차적으로 순회하면서, 무게 한도를 검사한 뒤</p>
+
+<p>넣을 수 있으면 weights[i-1] &lt;= w: 담고 max값을 확인해서 넣는다.</p>
+
+<p>이 아이템을 넣을 수 있을 때[i],</p>
+
+<p>넣었을때의 가치(values[i-1] + dp[i-1][w - weights[i-1]], )vs넣지 않았을때의 가치(dp[i-1][w]) 중 큰 값으로 업데이트 한다.</p>
+
+<p>최종 가치(값)는  n개를 넣었을때 제한 무게(ex. k)라고 하면 dp[n][k]이다.</p>
+
+<p>아이템 1번</p>
+
+<h1 id="코드">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">item</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">n</span><span class="p">,</span><span class="n">k</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">))</span>
+<span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+<span class="n">weights</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">w</span><span class="p">,</span><span class="n">v</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">))</span>
+    <span class="n">weights</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+    <span class="n">values</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+<span class="n">item</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span><span class="c1">#0번째 물건부터 시작
+</span>    <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">w</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">w</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">elif</span> <span class="n">weights</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">w</span><span class="p">:</span>
+            <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">w</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">w</span> <span class="o">-</span> <span class="n">weights</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]],</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">w</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">w</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">w</span><span class="p">]</span>
+            
+<span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">k</span><span class="p">])</span>
+
+</code></pre></div></div>
+
+<h1 id="기억할-것">💡 기억할 것</h1>
+
+<ul>
+  <li>dp보다는 정렬부터 생각했는데 이전 값이 이후에 영향을 미치니 dp가 맞다고 확신을 가져야한다. 그리고 dp를 어떻게 구성할지 잘 정해야겠다.</li>
+  <li>예시를 들어 관계를 확인해보기도 하고 어떻게 영향을 주는지도 파악하자. 여기서 중요한 것은 무엇을 뺴느냐, 그리고 빼도 가치가 높아질 수 있다는 점이다. 따라서 max로 확인한다.</li>
+</ul>]]></content><author><name>Yubeenpark</name></author><category term="Baekjoon" /><category term="Baekjoon" /><category term="코테 공부" /><category term="DP" /><category term="Gold" /><summary type="html"><![CDATA[골드 V]]></summary></entry><entry><title type="html">PRACTICE MOVIE APP</title><link href="https://yubeenpark.github.io/jekyll-theme-yat/react/2024/07/07/noamdcoder.md.html" rel="alternate" type="text/html" title="PRACTICE MOVIE APP" /><published>2024-07-07T00:00:00+00:00</published><updated>2024-07-07T00:00:00+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/react/2024/07/07/noamdcoder.md</id><content type="html" xml:base="https://yubeenpark.github.io/jekyll-theme-yat/react/2024/07/07/noamdcoder.md.html"><![CDATA[<h3 id="usestate상태-초기값">useState(상태 초기값);</h3>
+
+<ul>
+  <li>기능: 함수형 컴포넌트에서 상태를 관리함.</li>
+  <li>return : 상태 변수, 상태 업데이트하는 함수 반환.
+    <ul>
+      <li>상태 변수: useState(초기값);으로 초기화할 수 있다.</li>
+      <li>상태 업데이트 함수: 새로운 상태 값을 받아서 상태를 업데이트 한다. 만약 업데이트 된다면, 컴포넌트를 다시 렌더링하여 상태를 반영한다.</li>
+    </ul>
+  </li>
+  <li>예시</li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="p">[</span><span class="nx">coins</span><span class="p">,</span> <span class="nx">setCoins</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([]);</span>
+</code></pre></div></div>
+
+<h3 id="useeffectfunc업데이트-여부를-결정할-값">useEffect(func,[업데이트 여부를 결정할 값])</h3>
+
+<hr />
+
+<ul>
+  <li>기능:  코드를 넣으면 컴포넌트가 마운트 된 직후!+업데이트 될 때마다 실행</li>
+  <li>변수 2개 : (func, [업데이트 추적 값])
+    <ul>
+      <li>첫번째는 실행할 함수를 넣는다. (마운트 직후+업데이트)</li>
+      <li>두번째 인자는 업데이트 여부를 결정하므로 만약 <code class="language-plaintext highlighter-rouge">[] 빈 배열</code>인 경우, 처음 마운트 될 때만 실행된다.
+  값이 있으면 <code class="language-plaintext highlighter-rouge">ex) [money]</code>  해당 값이 변경될 때 <code class="language-plaintext highlighter-rouge">func</code>가 실행된다.</li>
+    </ul>
+  </li>
+  <li>예시</li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">useEffect</span><span class="p">(()</span><span class="o">=&gt;</span><span class="p">{</span>
+    <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://api.coinpaprika.com/v1/tickers</span><span class="dl">'</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span><span class="o">=&gt;</span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">json</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+      <span class="nx">setCoins</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
+      <span class="nx">setLoading</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">},[])</span>
+</code></pre></div></div>
+
+<h1 id="cointracker">CoinTracker</h1>
+
+<hr />
+
+<p>코인의 정보를 가져와서 보여줌.</p>
+
+<h3 id="추가-기능">추가 기능</h3>
+
+<hr />
+
+<p>사용자가 input으로 자신이 가진 돈을 넣으면(달러), 그</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">loading</span><span class="p">,</span> <span class="nx">setLoading</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">coins</span><span class="p">,</span> <span class="nx">setCoins</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([]);</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">money</span><span class="p">,</span> <span class="nx">setMoney</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="nx">useEffect</span><span class="p">(()</span><span class="o">=&gt;</span><span class="p">{</span>
+    <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://api.coinpaprika.com/v1/tickers</span><span class="dl">'</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">response</span><span class="p">)</span><span class="o">=&gt;</span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">json</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+      <span class="nx">setCoins</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
+      <span class="nx">setLoading</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="p">},[])</span>
+<span class="kd">const</span> <span class="nx">onSubmit</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+
+  <span class="k">if</span><span class="p">(</span><span class="nx">money</span><span class="o">===</span><span class="dl">""</span><span class="p">){</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+    <span class="nx">setMoney</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">money</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">const</span> <span class="nx">onChange</span><span class="o">=</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
+  <span class="nx">setMoney</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<span class="p">}</span>
+  
+  <span class="k">return</span> <span class="p">(&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>The Coins!<span class="si">{</span><span class="nx">coins</span><span class="p">.</span><span class="nx">length</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="si">{</span><span class="nx">loading</span> <span class="p">?</span> <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>Loading.. <span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> <span class="p">:</span> <span class="kc">null</span><span class="si">}</span>
+
+      <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Enter Your money <span class="ni">&amp;nbsp;</span>
+      $<span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="p">=</span><span class="s">"money"</span> <span class="na">onChange</span><span class="p">=</span><span class="si">{</span><span class="nx">onChange</span><span class="si">}</span><span class="p">&gt;&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>You can buy <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ol</span> <span class="p">&gt;</span>
+      <span class="si">{</span><span class="nx">coins</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">coin</span><span class="p">,</span><span class="nx">index</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">(</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">key</span><span class="p">=</span><span class="si">{</span><span class="nx">coin</span><span class="p">.</span><span class="nx">id</span><span class="si">}</span> <span class="p">&gt;</span>
+        <span class="si">{</span><span class="nx">coin</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span> : <span class="si">{</span><span class="nx">coin</span><span class="p">.</span><span class="nx">symbol</span><span class="si">}</span> $<span class="si">{</span><span class="p">(</span><span class="nx">coin</span><span class="p">.</span><span class="nx">quotes</span><span class="p">.</span><span class="nx">USD</span><span class="p">.</span><span class="nx">price</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span>
+        <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">br</span><span class="p">&gt;</span>You can buy this : <span class="si">{</span><span class="p">(</span><span class="nx">money</span><span class="o">/</span><span class="nx">coin</span><span class="p">.</span><span class="nx">quotes</span><span class="p">.</span><span class="nx">USD</span><span class="p">.</span><span class="nx">price</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span> coins
+        
+      <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;))</span><span class="si">}</span>
+      
+    <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="정리-및-느낀점">정리 및 느낀점</h2>
+
+<hr />
+
+<ul>
+  <li>@tailwind components으로 state를 관리할 때, setCoins를 따로 기능을 구현해야하나 했지만 이미 상태 관리하라고 나온 함수이다. 오랜만에 해서 헷갈렸다.</li>
+  <li>state를 항상 직접 수정하지 않는다. 수정하는 함수를 이용해서 수정한다!</li>
+  <li><code class="language-plaintext highlighter-rouge">…</code>는 스프레드 연산자이다. Array의 요소를 펼쳐주는 것! Python에서는 *가 …의 역할을 한다.</li>
+  <li>map()에서 첫번째는 map이 돌아갈때 각 array요소이며,2번째는 index이다.</li>
+</ul>
+
+<aside>
+💡 새로운 아이템을 만들 때 key가 필요한 이유:React가 업데이트를 효율적으로 관리하기 위해. 가상 DOM업데이트 방식이므로 key가 있어야 뭐가 변경,추가,삭제 되었는지 정확히 추적하기 때문이다. 일반적으로는 고유한 값 즉 데이터베이스 ID로 사용하는게 좋다.
+
+</aside>
+
+<ul>
+  <li>useEffect는 컴포넌트가 시작될때 실행할 것을 넣으면 됨. 만약 ,  useEffect(()⇒{},[])에서 뒤에 값이 빈 배열이면, 한번만 실행되고  뒤에 값이 있으면 그게 변화되면 재실행해준다.</li>
+</ul>]]></content><author><name>Yubeenpark</name></author><category term="React" /><category term="React" /><category term="Frontend" /><category term="노마드코더" /><summary type="html"><![CDATA[useState(상태 초기값);]]></summary></entry><entry><title type="html">1389번 케빈 베이컨의 6단계 법칙</title><link href="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/12/1389.html" rel="alternate" type="text/html" title="1389번 케빈 베이컨의 6단계 법칙" /><published>2024-06-12T00:00:00+00:00</published><updated>2024-06-12T00:00:00+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/12/1389</id><content type="html" xml:base="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/12/1389.html"><![CDATA[<blockquote>
+  <p><strong>실버 I</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약">💡<strong>문제 분석 요약</strong></h1>
+
+<p>floyd-warshall</p>
+
+<p>플루이드-워셜</p>
+
+<h1 id="알고리즘-설계">💡<strong>알고리즘 설계</strong></h1>
+
+<p>플루이드 워셔로 모든 친구와 몇 단계로 알 수 있는지를 정리해야한다.</p>
+
+<p>들어오는 관계를 통해 INF로 초기화한 bacon 배열에 관계를 1로 추가한다.</p>
+
+<p>이후 플루이드 워셜 알고리즘을 통해, 관계의 최솟값을 넣는다.</p>
+
+<p>다 정리되면, inf인 값은 관계가 없는 것으로 0으로 설정한 뒤 각 번호의 모든 값을 더하여 answer에 추가한다.</p>
+
+<p>answer에 0번은 없으므로 [1:]로 슬라이스 한 뒤,</p>
+
+<p>최솟값을 가지는 번호를 출력한다.</p>
+
+<h1 id="코드">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">sys</span><span class="p">,</span><span class="n">math</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+<span class="n">inf</span><span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">inf</span>
+<span class="n">bacon</span> <span class="o">=</span> <span class="p">[[</span><span class="n">math</span><span class="p">.</span><span class="n">inf</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+    <span class="n">i</span><span class="p">,</span><span class="n">j</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+    <span class="n">bacon</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">bacon</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="n">bacon</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">bacon</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">],</span> <span class="n">bacon</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span><span class="o">+</span><span class="n">bacon</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">bacon</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">==</span><span class="n">inf</span><span class="p">:</span>
+            <span class="n">bacon</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span><span class="mi">0</span>
+    <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">bacon</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="n">answer</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">answer</span><span class="p">.</span><span class="n">index</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">answer</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="헷갈린-이유">💡 헷갈린 이유</h1>
+
+<ul>
+  <li>들어오는 값이 1~n이므로 배열을 range(n+1)로 설정해야 한다.</li>
+</ul>]]></content><author><name>Yubeenpark</name></author><category term="Baekjoon" /><category term="Baekjoon" /><category term="코테 공부" /><category term="floyd-warshall" /><category term="Silver" /><summary type="html"><![CDATA[실버 I]]></summary></entry><entry><title type="html">16928번 뱀과 사다리 게임</title><link href="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/12/16928.html" rel="alternate" type="text/html" title="16928번 뱀과 사다리 게임" /><published>2024-06-12T00:00:00+00:00</published><updated>2024-06-12T00:00:00+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/12/16928</id><content type="html" xml:base="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/12/16928.html"><![CDATA[<blockquote>
+  <p><strong>골드 V</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약">💡<strong>문제 분석 요약</strong></h1>
+
+<p>BFS</p>
+
+<h1 id="알고리즘-설계">💡<strong>알고리즘 설계</strong></h1>
+
+<p>움직이는 것은 그 전에 영향을 받으므로, 이전 값의 영향을 넣을 수 있는 bfs를 떠올렸으며, 여러 경우의 수를 따져가면서도 최소를 카운팅 해야하기에 dfs가 아닌 bfs로 풀었다.</p>
+
+<p>기본적으로 index =1에 1, 2에는 2값을 가지는 보드를 생성한 후, 뱀과 사다리로 연결되어 움직이는 경우에는, 도착지의 값을 입력한다.</p>
+
+<p>4→62일 경우, board[4]=62</p>
+
+<p>visited에는 방문한 번호의 인덱스를 가진 칸에 True를 넣는다.</p>
+
+<p>그리고 queue에 돌아가면서 1~6까지 더한 뒤, 범위 내라면 queue에 추가한다.</p>
+
+<h1 id="코드">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span> 
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span><span class="p">,</span><span class="n">m</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">))</span>
+<span class="n">board</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">101</span><span class="p">)]</span>
+<span class="n">visited</span> <span class="o">=</span> <span class="p">[</span><span class="bp">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">101</span><span class="p">)]</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">))</span>
+    <span class="n">board</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span><span class="n">y</span>
+    
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+    <span class="n">u</span><span class="p">,</span><span class="n">v</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">))</span>
+    <span class="n">board</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span><span class="n">v</span>
+    
+<span class="n">q</span><span class="o">=</span> <span class="n">deque</span><span class="p">()</span>
+
+<span class="n">q</span><span class="p">.</span><span class="n">append</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">visited</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="k">while</span> <span class="n">q</span><span class="p">:</span>
+    <span class="n">new</span> <span class="o">=</span> <span class="n">deque</span><span class="p">()</span>
+    <span class="n">n</span><span class="p">,</span><span class="n">cnt</span> <span class="o">=</span><span class="n">q</span><span class="p">.</span><span class="n">popleft</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">==</span><span class="mi">100</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">):</span>
+        <span class="n">move</span> <span class="o">=</span> <span class="n">n</span><span class="o">+</span><span class="n">i</span>
+        <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;</span><span class="n">move</span><span class="o">&lt;=</span><span class="mi">100</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">visited</span><span class="p">[</span><span class="n">board</span><span class="p">[</span><span class="n">move</span><span class="p">]]</span> <span class="ow">and</span> <span class="mi">0</span><span class="o">&lt;</span><span class="n">board</span><span class="p">[</span><span class="n">move</span><span class="p">]</span><span class="o">&lt;=</span><span class="mi">100</span> <span class="p">:</span>
+            <span class="n">q</span><span class="p">.</span><span class="n">append</span><span class="p">((</span><span class="n">board</span><span class="p">[</span><span class="n">move</span><span class="p">],</span><span class="n">cnt</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+            <span class="n">visited</span><span class="p">[</span><span class="n">board</span><span class="p">[</span><span class="n">move</span><span class="p">]]</span> <span class="o">=</span> <span class="bp">True</span>
+
+</code></pre></div></div>
+
+<h1 id="오류-난-이유">💡오류 난 이유</h1>
+
+<ul>
+  <li>range오류. visited와 board의 range가 달랐고 1~101까지로 설정한게 잘못이었다. 인덱스와 그에 대한 값을 무엇으로 설정할건지 확실하게 하자.</li>
+  <li>counting을 위해 new_queue를 생성하고, 그에 따른 값을 q에 다시 넣어서 초기화했지만, 이러면 1~6까지의 경우의 수를 다 넣지 않고 초기화 되므로 더 오래걸린다. 따라서 q 자체에 단계인 cnt를 넣는 것으로 변경하였다.</li>
+</ul>
+
+<h1 id="기억할-것">💡 기억할 것</h1>
+
+<ul>
+  <li>인덱스와 그에 대한 값을 무엇으로 설정할건지 확실하게 하자.</li>
+  <li>활용하려는 코드를 적용했을 때 어떤 값이 실제로 들어가는지 그려보고 적용해보자.</li>
+</ul>]]></content><author><name>Yubeenpark</name></author><category term="Baekjoon" /><category term="Baekjoon" /><category term="코테 공부" /><category term="BFS" /><category term="Gold" /><summary type="html"><![CDATA[골드 V]]></summary></entry><entry><title type="html">9019번 DSLR</title><link href="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/12/9019.html" rel="alternate" type="text/html" title="9019번 DSLR" /><published>2024-06-12T00:00:00+00:00</published><updated>2024-06-12T00:00:00+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/12/9019</id><content type="html" xml:base="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/12/9019.html"><![CDATA[<blockquote>
+  <p><strong>골드 IV</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약"><strong>문제 분석 요약</strong></h1>
+
+<p>BFS</p>
+
+<h1 id="알고리즘-설계">💡<strong>알고리즘 설계</strong></h1>
+
+<p>1~10000 미만의 십진수 내에서 탐색 가능하므로 다 탐색해도 괜찮은</p>
+
+<p>BFS를 사용한다.</p>
+
+<p>그리고 각 명령어를 수행한 뒤 적용 값으로 명령어를 계속 수행해야 하기 때문에 BFS로 탐구한다.</p>
+
+<p>D,S,L,R의 함수를 만들고 BFS로 적용값 중 a==b가 되는 경우를 찾는다.</p>
+
+<p>queue에 초기값인 a를 넣고, 명령어는 ‘’로 초기화한다.</p>
+
+<p>이후, queue에서 값을 빼가며 n,case를 확인한다.</p>
+
+<p>n≠b이면, 명령어 모음집을 다 실행해보면서, 그 숫자를 아직 만들지 못했을 경우 queue에 더하여 함수를 적용시킬 qeueu에 넣는다.</p>
+
+<p>이때, 함수 이름을 그대로  str에 적용하기 위하여 function.__name__으로 함수 이름을 가져왔다.</p>
+
+<h1 id="코드">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">t</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="n">n</span><span class="o">=</span><span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">D</span><span class="p">():</span>
+    <span class="k">if</span> <span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">&gt;</span><span class="mi">9999</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="p">)</span><span class="o">%</span><span class="mi">10000</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">n</span>
+    
+<span class="k">def</span> <span class="nf">S</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">9999</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span>
+    
+<span class="k">def</span> <span class="nf">L</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">1000</span> <span class="o">+</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">1000</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span>
+
+<span class="k">def</span> <span class="nf">R</span><span class="p">():</span>                        
+    <span class="k">return</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">10</span> <span class="o">+</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">10</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1000</span>
+<span class="n">func</span> <span class="o">=</span> <span class="p">[</span><span class="n">D</span><span class="p">,</span><span class="n">S</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="n">R</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">))</span>
+    <span class="n">visited</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">)]</span>
+    <span class="n">queue</span> <span class="o">=</span> <span class="n">deque</span><span class="p">()</span>
+    <span class="n">queue</span><span class="p">.</span><span class="n">append</span><span class="p">((</span><span class="n">a</span><span class="p">,</span><span class="s">''</span><span class="p">))</span>
+    <span class="k">while</span> <span class="n">queue</span><span class="p">:</span>
+        <span class="n">n</span><span class="p">,</span><span class="n">case</span><span class="o">=</span> <span class="n">queue</span><span class="p">.</span><span class="n">popleft</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">case</span><span class="p">)</span>
+            <span class="k">break</span>   
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+            <span class="n">case_n</span>  <span class="o">=</span> <span class="n">func</span><span class="p">[</span><span class="n">i</span><span class="p">]()</span>
+            <span class="k">if</span> <span class="n">visited</span><span class="p">[</span><span class="n">case_n</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+                <span class="n">queue</span><span class="p">.</span><span class="n">append</span><span class="p">((</span><span class="n">case_n</span><span class="p">,</span><span class="n">case</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">func</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">__name__</span><span class="p">)))</span>
+                <span class="n">visited</span><span class="p">[</span><span class="n">case_n</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
+</code></pre></div></div>
+
+<h1 id="틀린-이유">💡틀린 이유</h1>
+
+<ul>
+  <li>BFS인것은 알았으나, function을 적용한 값을 전부 queue에 넣어도 되는지 고민됐다.</li>
+</ul>
+
+<h1 id="기억할-것">💡 기억할 것</h1>
+
+<ul>
+  <li>함수 이름만 넣은 뒤, 실행할 때 ()를 붙여줘서 실행시킬 수 있다.</li>
+  <li>함수 이름은 funciton.<strong>name</strong> 으로 언더바 name을 활용해 가져올 수 있다.</li>
+</ul>]]></content><author><name>Yubeenpark</name></author><category term="Baekjoon" /><category term="Baekjoon" /><category term="코테 공부" /><category term="BFS" /><category term="Gold" /><summary type="html"><![CDATA[골드 IV]]></summary></entry><entry><title type="html">11403번 경로찾기</title><link href="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/11/11403.html" rel="alternate" type="text/html" title="11403번 경로찾기" /><published>2024-06-11T00:00:00+00:00</published><updated>2024-06-11T00:00:00+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/11/11403</id><content type="html" xml:base="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/11/11403.html"><![CDATA[<h1 id="11403번-경로찾기">11403번 경로찾기</h1>
+
+<blockquote>
+  <p><strong>실버 I</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약">💡<strong>문제 분석 요약</strong></h1>
+
+<p>floyd-warshall</p>
+
+<p>플루이드-워셜</p>
+
+<h1 id="알고리즘-설계">💡<strong>알고리즘 설계</strong></h1>
+
+<p>플루이드 워셔로 모든 그래프로 갈 수 있는 가중치를 정리한다.</p>
+
+<p>dist를 inf로 초기화 한다.</p>
+
+<p>k를 거쳐서 i→j로 가는거와 i→j로 갈 수 있는 가중치 중 최솟값을 [i][j]에 넣는다.</p>
+
+<p>이때, inf로 나온다는 건 i→j로 가는 경로가 없다는 뜻이므로 0으로 출력한다.. 그리고 inf가 아닌경우 경로가 있다는 뜻이므로 1로 출력한다.</p>
+
+<h1 id="코드">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">dist</span> <span class="o">=</span><span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">replace</span><span class="p">(</span><span class="s">'0'</span><span class="p">,</span><span class="s">'inf'</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span><span class="n">a</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)))</span>
+    <span class="n">dist</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span><span class="o">+</span><span class="n">dist</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+           <span class="c1">#k를 거친 경로 vs i-&gt;j로 가는 직통 경로
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">==</span><span class="n">math</span><span class="p">.</span><span class="n">inf</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">''</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="헷갈린-이유">💡 헷갈린 이유</h1>
+
+<ul>
+  <li>오랜만에 플루이드워셜 알고리즘을 적용해서 어떻게 값이 들어왔는지 감이 잡히지 않았다.</li>
+</ul>]]></content><author><name>Yubeenpark</name></author><category term="Baekjoon" /><category term="Baekjoon" /><category term="코테 공부" /><category term="floyd-warshall" /><category term="Gold" /><summary type="html"><![CDATA[11403번 경로찾기]]></summary></entry><entry><title type="html">5430번 AC</title><link href="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/10/5430.html" rel="alternate" type="text/html" title="5430번 AC" /><published>2024-06-10T00:00:00+00:00</published><updated>2024-06-10T00:00:00+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/10/5430</id><content type="html" xml:base="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/10/5430.html"><![CDATA[<blockquote>
+  <p><strong>골드 V</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약">💡<strong>문제 분석 요약</strong></h1>
+
+<p>구현</p>
+
+<h1 id="알고리즘-설계">💡<strong>알고리즘 설계</strong></h1>
+
+<p>함수 명령어는 list로 만들어 하나씩 돌면서 수행한다.</p>
+
+<p>numbers는 list로 만들어 주기 위해 앞 뒤의 괄호를 제거하고 (replace로 대체) 만약 제거하니 아무것도 안남으면 [] split이 불가하므로 빈 리스트를 할당한다.</p>
+
+<p>R인 경우, 실제로 뒤집는게 아닌  뒤집힌 횟수를 센다.</p>
+
+<p>횟수를 기반으로 뒤집은 횟수가 짝수면 원래 리스트의 앞에서 빼므로 del number[0]으로 앞의 값을 빼준다. 이때, pop으로 하면 시간초과가 나므로 del로 접근한다.</p>
+
+<p>만약, 뒤집은 횟수가 홀수면 뒤집혔으므로 뒤에 숫자를 빼준다.</p>
+
+<p>출력할 때, 뒤집힌 수의 짝홀로 뒤집혀서 출력할지 말지를 결정한다.</p>
+
+<h1 id="코드">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">t</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="n">isError</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="n">reverse</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">())</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+    <span class="n">numbers</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">numbers</span> <span class="o">=</span><span class="n">numbers</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'['</span><span class="p">,</span><span class="s">''</span><span class="p">)</span>
+    <span class="n">numbers</span><span class="o">=</span> <span class="n">numbers</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">']'</span><span class="p">,</span><span class="s">''</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">numbers</span><span class="o">==</span><span class="s">''</span><span class="p">:</span>
+        <span class="n">numbers</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="n">numbers</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">','</span><span class="p">)))</span>
+    <span class="k">for</span> <span class="n">func</span> <span class="ow">in</span> <span class="n">p</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">func</span><span class="o">==</span><span class="s">'R'</span><span class="p">:</span>
+            <span class="n">reverse</span> <span class="o">+=</span><span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">numbers</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">reverse</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+                    <span class="k">del</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">numbers</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">'error'</span><span class="p">)</span>
+                <span class="n">isError</span> <span class="o">=</span><span class="bp">True</span>
+                <span class="k">break</span>
+    
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">isError</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">reverse</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+            <span class="n">numbers</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">'['</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">numbers</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s">','</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s">']</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">'['</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">numbers</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s">','</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s">']</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
+                
+                    
+
+</code></pre></div></div>
+
+<h1 id="오류-난-이유">💡오류 난 이유</h1>
+
+<ul>
+  <li>reverse에서 실제로 reverse를 하니 시간 초과가 났다.</li>
+  <li>출력 형식을 맞추지 못했다.</li>
+</ul>
+
+<h1 id="기억할-것">💡 기억할 것</h1>
+
+<ul>
+  <li>출력 형식을 제대로 파악하자.</li>
+  <li>문제 그대로 뒤집거나 바꾸려고 하지 말고 다른 방법이 없는지 고민하자. 특히 reverse나 pop같은 경우.</li>
+</ul>]]></content><author><name>Yubeenpark</name></author><category term="Baekjoon" /><category term="Baekjoon" /><category term="코테 공부" /><category term="구현" /><category term="Gold" /><summary type="html"><![CDATA[골드 V]]></summary></entry><entry><title type="html">10026번 적록색약</title><link href="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/09/11026.html" rel="alternate" type="text/html" title="10026번 적록색약" /><published>2024-06-09T00:00:00+00:00</published><updated>2024-06-09T00:00:00+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/09/11026</id><content type="html" xml:base="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/06/09/11026.html"><![CDATA[<blockquote>
+  <p><strong>골드 V</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약">💡<strong>문제 분석 요약</strong></h1>
+
+<p>BFS</p>
+
+<h1 id="알고리즘-설계">💡<strong>알고리즘 설계</strong></h1>
+
+<p>우선 B는 무조건 세야하는 파트이므로, B를 찾을때 B의 구역을 찾아 숫자를 알 수 있게 find함수에서 실행한다.</p>
+
+<p>방문하지 않은 구역이 없도록 find함수에는 방문하지 않은게 있다면 queue에 넣고 True를 반환한다.</p>
+
+<h1 id="코드">💡코드</h1>
+
+<p>더 효율적인 방법으론, G를 찾았을때 R로 변환시켜준다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
+<span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="n">width</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">blue</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">width</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">width</span><span class="p">):</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="n">rgb</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">==</span><span class="s">'B'</span><span class="p">:</span>
+                    <span class="n">blue</span> <span class="o">+=</span><span class="mi">1</span>
+                <span class="n">queue</span><span class="p">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">])</span>
+                <span class="k">return</span> <span class="bp">True</span>
+                
+
+<span class="k">def</span> <span class="nf">find_rg</span><span class="p">(</span><span class="n">width</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">width</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">width</span><span class="p">):</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="n">rgb</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="s">'B'</span><span class="p">:</span>
+                    <span class="n">queue</span><span class="p">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">])</span>
+                    <span class="k">return</span> <span class="bp">True</span>
+                
+
+<span class="n">dx</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">dy</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="k">global</span> <span class="n">rgb</span>
+<span class="n">rgb</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">blue</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">rgb</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">())))</span>
+
+<span class="n">visited</span> <span class="o">=</span><span class="p">[</span> <span class="p">[</span><span class="bp">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+<span class="n">all_answer</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">answer</span> <span class="o">=</span><span class="mi">0</span>
+<span class="n">queue</span> <span class="o">=</span> <span class="n">deque</span><span class="p">()</span>
+<span class="k">while</span> <span class="n">find</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">queue</span><span class="p">:</span>
+        <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span> <span class="n">queue</span><span class="p">.</span><span class="n">popleft</span><span class="p">()</span>
+        <span class="n">visited</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+            <span class="n">x1</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span> <span class="n">dx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">y1</span> <span class="o">=</span> <span class="n">y</span><span class="o">+</span> <span class="n">dy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">x1</span><span class="o">&lt;</span><span class="n">n</span> <span class="ow">and</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">y1</span><span class="o">&lt;</span><span class="n">n</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">rgb</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span><span class="o">==</span><span class="n">rgb</span><span class="p">[</span><span class="n">x1</span><span class="p">][</span><span class="n">y1</span><span class="p">]</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">visited</span><span class="p">[</span><span class="n">x1</span><span class="p">][</span><span class="n">y1</span><span class="p">]</span> <span class="p">:</span>
+                    <span class="n">queue</span><span class="p">.</span><span class="n">append</span><span class="p">([</span><span class="n">x1</span><span class="p">,</span><span class="n">y1</span><span class="p">])</span>
+                    <span class="n">visited</span><span class="p">[</span><span class="n">x1</span><span class="p">][</span><span class="n">y1</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+    
+    <span class="n">answer</span> <span class="o">+=</span><span class="mi">1</span>
+<span class="n">all_answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">visited</span> <span class="o">=</span><span class="p">[</span> <span class="p">[</span><span class="bp">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+
+<span class="n">not_normal</span> <span class="o">=</span> <span class="mi">0</span>
+
+    
+<span class="n">queue</span> <span class="o">=</span> <span class="n">deque</span><span class="p">()</span>
+<span class="k">while</span> <span class="n">find_rg</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">queue</span><span class="p">:</span>
+        <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span> <span class="n">queue</span><span class="p">.</span><span class="n">popleft</span><span class="p">()</span>
+        <span class="n">visited</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+            <span class="n">x1</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span> <span class="n">dx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">y1</span> <span class="o">=</span> <span class="n">y</span><span class="o">+</span> <span class="n">dy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">x1</span><span class="o">&lt;</span><span class="n">n</span> <span class="ow">and</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">y1</span><span class="o">&lt;</span><span class="n">n</span><span class="p">:</span>
+                <span class="n">original</span> <span class="o">=</span> <span class="n">rgb</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span>
+                <span class="n">other</span> <span class="o">=</span> <span class="n">rgb</span><span class="p">[</span><span class="n">x1</span><span class="p">][</span><span class="n">y1</span><span class="p">]</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">visited</span><span class="p">[</span><span class="n">x1</span><span class="p">][</span><span class="n">y1</span><span class="p">]</span> <span class="ow">and</span>  <span class="n">original</span> <span class="o">!=</span> <span class="s">'B'</span> <span class="ow">and</span> <span class="n">other</span> <span class="o">!=</span><span class="s">'B'</span><span class="p">:</span>
+                    <span class="n">queue</span><span class="p">.</span><span class="n">append</span><span class="p">([</span><span class="n">x1</span><span class="p">,</span><span class="n">y1</span><span class="p">])</span>
+                    <span class="n">visited</span><span class="p">[</span><span class="n">x1</span><span class="p">][</span><span class="n">y1</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+    
+    <span class="n">not_normal</span> <span class="o">+=</span><span class="mi">1</span>
+<span class="n">all_answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">not_normal</span><span class="o">+</span><span class="n">blue</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">all_answer</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="틀린-이유">💡틀린 이유</h1>
+
+<ul>
+  <li>구역으로 나누는게 분할정복인가 해서 애매했음</li>
+  <li>분할정복이 아닌 이유→ 큰 문제를 작은 문제로 쪼개는 문제가 애초부터 아님.</li>
+  <li>결국 각 구역이 무슨 색인지 탐색을 해야하고, 이를 빨리 하기 위한 방법을 써야함.</li>
+</ul>
+
+<h1 id="기억할-것">💡 기억할 것</h1>
+
+<ul>
+  <li>divide conque= 큰 문제를 작은 문제로 쪼개고, 쪼갠 것을 다시 더하면서 값을 계산하는 방식.</li>
+  <li>
+    <p>BFS= 결국 탐색이고 어떻게 효율적으로 탐색하냐이다.</p>
+
+    <p>##</p>
+  </li>
+</ul>]]></content><author><name>Yubeenpark</name></author><category term="Baekjoon" /><category term="Baekjoon" /><category term="코테 공부" /><category term="BFS" /><category term="Gold" /><summary type="html"><![CDATA[골드 V]]></summary></entry><entry><title type="html">1074번 Z</title><link href="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/05/27/1074.html" rel="alternate" type="text/html" title="1074번 Z" /><published>2024-05-27T00:00:00+00:00</published><updated>2024-05-27T00:00:00+00:00</updated><id>https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/05/27/1074</id><content type="html" xml:base="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/05/27/1074.html"><![CDATA[<h1 id="1074번-z">1074번 Z</h1>
+
+<blockquote>
+  <p><strong>골드 V</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약">💡<strong>문제 분석 요약</strong></h1>
+
+<p>분할 정복</p>
+
+<h1 id="알고리즘-설계">💡<strong>알고리즘 설계</strong></h1>
+
+<p>전체 탐색을 하려면 연산이 많아지므로 분할 탐색 알고리즘을 사용해야한다.</p>
+
+<p>이때, 모든 부분을 분할해서 탐색하면 안된다. (시간 복잡도 개선이 없기에)</p>
+
+<p>DP와 반대로 Top-Down 방식이기에 전체→작은 부분으로 내려간다.</p>
+
+<p>일단 4부분으로 자르고 그 자른 범위에 r,c가 있다면 탐색을 진행한다.</p>
+
+<p>만약 n이 2인경우 배열은 4*4이고, 4조각으로 자르면, 한 변의 길이는 2이다.</p>
+
+<p>X&gt;r ,  X+N≤R , y&gt;c, y+n ≤c중 하나라도 해당되면 cnt+=n**2를 더해주고 끝낸다.</p>
+
+<p>위의 조건은 구하려는 r과 c가 범위 내에 없다는 뜻이다. 그러니  분할 정복으로 더 계산하지 않고, 넘어간 숫자 만큼을 cnt에 더해준다.</p>
+
+<p>n//=2로 잘라주고, (0,0) (0,2) (2,0) (2,2)처럼 자른 범위를 하나씩 돌며 수행한다.</p>
+
+<p>만약 n이 2로 내려오면 변의 길이가 2가 되므로 z를 가진 사각형이 된다.</p>
+
+<h1 id="코드">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">def</span> <span class="nf">dc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">cnt</span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">&gt;</span><span class="n">r</span> <span class="ow">or</span> <span class="n">x</span><span class="o">+</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="n">r</span> <span class="ow">or</span> <span class="n">y</span><span class="o">&gt;</span><span class="n">c</span> <span class="ow">or</span> <span class="n">y</span><span class="o">+</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="n">c</span><span class="p">:</span>
+        <span class="n">cnt</span> <span class="o">+=</span> <span class="n">n</span><span class="o">**</span><span class="mi">2</span>
+        <span class="k">return</span> 
+    
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">n</span><span class="o">//=</span><span class="mi">2</span>
+        <span class="n">dc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">dc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">dc</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">dc</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="n">y</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="n">r</span> <span class="ow">and</span> <span class="n">y</span><span class="o">==</span><span class="n">c</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">x</span><span class="o">==</span><span class="n">r</span> <span class="ow">and</span> <span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="o">==</span><span class="n">c</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">cnt</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="o">==</span><span class="n">r</span> <span class="ow">and</span> <span class="n">y</span><span class="o">==</span><span class="n">c</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">cnt</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">cnt</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">sys</span><span class="p">.</span><span class="nb">exit</span><span class="p">()</span>
+        
+<span class="n">n</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">c</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+<span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">dc</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="o">**</span><span class="n">n</span><span class="p">)</span>
+<span class="s">'''
+이 외에 다른 코드
+'''</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">N</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">c</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+
+<span class="k">def</span> <span class="nf">z</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">res</span><span class="p">):</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">**</span> <span class="n">n</span>  <span class="c1"># 배열 길이
+</span>    <span class="n">half</span> <span class="o">=</span> <span class="n">length</span> <span class="o">//</span> <span class="mi">2</span>  <span class="c1"># 사분면으로 만들기위한 배열길이의 절반길이 구하기
+</span>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># 재귀 종료조건 2x2 4 최소 사분면이 만들어질 경우
+</span>        <span class="k">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">r</span> <span class="o">+</span> <span class="n">c</span> <span class="o">+</span> <span class="n">res</span><span class="p">)</span>  <span class="c1"># row가 늘어나면 도착횟수가 2씩 늘어나고 colunm이 늘어나면 1씩 늘어난다.
+</span>        <span class="k">return</span>
+
+    <span class="k">if</span> <span class="n">r</span> <span class="o">&gt;=</span> <span class="n">half</span> <span class="ow">and</span> <span class="n">c</span> <span class="o">&gt;=</span> <span class="n">half</span><span class="p">:</span>  <span class="c1"># 4사분면일떄 조건
+</span>        <span class="n">z</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span> <span class="o">-</span> <span class="n">half</span><span class="p">,</span> <span class="n">c</span> <span class="o">-</span> <span class="n">half</span><span class="p">,</span> <span class="n">res</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">half</span> <span class="o">*</span> <span class="n">half</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">r</span> <span class="o">&gt;=</span> <span class="n">half</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">:</span>  <span class="c1"># 3사분면일때 조건
+</span>        <span class="n">z</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span> <span class="o">-</span> <span class="n">half</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">res</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">half</span> <span class="o">*</span> <span class="n">half</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">r</span> <span class="o">&lt;</span> <span class="n">half</span> <span class="o">&lt;=</span> <span class="n">c</span><span class="p">:</span>  <span class="c1"># 2사분면일때 조건
+</span>        <span class="n">z</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">c</span> <span class="o">-</span> <span class="n">half</span><span class="p">,</span> <span class="n">res</span> <span class="o">+</span> <span class="n">half</span> <span class="o">*</span> <span class="n">half</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>  <span class="c1"># 1사분면일때 조건
+</span>        <span class="n">z</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+        
+        
+<span class="n">z</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="틀린-이유">💡틀린 이유</h1>
+
+<ul>
+  <li><strong>순차적으로 숫자가 더해져서 모든 것을 탐색해 봐야 한다고 생각한게 가장 컸다.</strong>
+즉, 분할 탐색 시 넘어가는 조건을 어떻게 설정하지? 도 막막했다.
+    <ul>
+      <li>그저 4분면 중 어느 사분면인지 차례로 보고 넘어가기 때문에 가능한 조건이다. 예를 들어,  3 사분면에 있으면 1,2를 지나칠 때 숫자를 지나친 만큼 더해주면 된다. 그리고 3 사분면 안에서도 차례대로 쪼개서 더하기 때문에 이전 숫자들을 그대로 더하면 값이 나온다.</li>
+    </ul>
+  </li>
+  <li>분할 정복 알고리즘 문제를 잘 안 풀어봐서 감은 오는데 구현이 어렵다. 재귀로 제일 작은 곳 까지 가서, 풀고 가는건 이해하는데 구현을 어떻게 해야하지? 계속 막힌다.</li>
+  <li>지금 까지의 분할정복은, 최소 4분면으로 쪼개는 조건이 이미 문제에 제시되어있다. 따라서 4개로 쪼개는 것을 활용해야 하며, 종료 조건은 더 이상 쪼갤 수 없을 때이다.</li>
+  <li>코드가 계속 쪼개는 코드와 쪼개지 않는 코드로 나뉘어져 있다. 여기서 분할 정복 후 모든 코드를 탐색하지 않는 조건을 맨 위의 if 문으로 걸러 return해줘 더이상 분할 하지 않도록 했다.</li>
+  <li>만약, 쪼갤 때 까지 쪼개고 ( 함수 재귀 호출) 4개 중에 하나라면, 순서대로 (z모양 순으로) print할 값을 계산하여 출력한다.</li>
+</ul>
+
+<h1 id="기억할-것">💡 기억할 것</h1>
+
+<ul>
+  <li>divide conquer에 대해 좀 더 알자.  큰 문제를 작은 문제로 쪼개고, 쪼갠 것을 다시 더하면서 값을 계산하는 방식. 분할 정복은 dp와 달리 쪼갠 것이 독립적이다.
+    <ol>
+      <li><strong>분할</strong>: 문제를 작은 하위 문제로 분할.</li>
+      <li><strong>정복</strong>: 각 하위 문제는 재귀적으로 해결.</li>
+      <li><strong>결합</strong>: 하위 문제의 해결책을 결합하여 원래 문제를 해결.</li>
+    </ol>
+  </li>
+</ul>]]></content><author><name>Yubeenpark</name></author><category term="Baekjoon" /><category term="Baekjoon" /><category term="코테 공부" /><category term="분할 정복" /><category term="Gold" /><summary type="html"><![CDATA[1074번 Z]]></summary></entry></feed>

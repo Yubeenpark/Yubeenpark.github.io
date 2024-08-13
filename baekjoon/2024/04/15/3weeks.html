@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>2024.04-3 | Nutty</title>
+<meta name="generator" content="Jekyll v3.9.5">
+<meta property="og:title" content="2024.04-3">
+<meta name="author" content="Yubeenpark">
+<meta property="og:locale" content="ko">
+<meta name="description" content="2024년 4월 15일">
+<meta property="og:description" content="2024년 4월 15일">
+<link rel="canonical" href="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/04/15/3weeks.html">
+<meta property="og:url" content="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/04/15/3weeks.html">
+<meta property="og:site_name" content="Nutty">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-04-15T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="2024.04-3">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yubeenpark"},"dateModified":"2024-04-15T00:00:00+00:00","datePublished":"2024-04-15T00:00:00+00:00","description":"2024년 4월 15일","headline":"2024.04-3","mainEntityOfPage":{"@type":"WebPage","@id":"https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/04/15/3weeks.html"},"url":"https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/04/15/3weeks.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="canonical" href="https://yubeenpark.github.io">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://yubeenpark.github.io/jekyll-theme-yat/feed.xml" title="Nutty">
+<!-- Google tag (gtag.js) -->
+<script>
+  function initGoogleAnalytics() {
+    var doNotTrack = (window.doNotTrack === "1" || navigator.doNotTrack === "1" ||
+      navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1");
+    var enableDNT = "true" == "true";
+
+    if (!enableDNT || !doNotTrack) {
+      var measurementId = 'G-GJQXV24HLR';
+
+      (function(src) {
+        var tag = document.createElement('script');
+        tag.src = src;
+        tag.async = true;
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      })('https://www.googletagmanager.com/gtag/js?id=' + measurementId);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', measurementId);
+    }
+  }
+  window.addEventListener("load", initGoogleAnalytics);
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="Nutty" src="" onerror="this.style.display='none'">
+  Nutty
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/jekyll-theme-yat/about.html">ABOUT</a><a class="page-link" href="/jekyll-theme-yat/archives.html">ARCHIVES</a><a class="page-link" href="/jekyll-theme-yat/categories.html">CATEGORIES</a><a class="page-link" href="/jekyll-theme-yat/">HOME</a><a class="page-link" href="/jekyll-theme-yat/tags.html">TAGS</a>
+
+
+
+
+
+
+
+
+
+<div class="page-link" style="display: inline;">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<div class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="fr">
+          
+          <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" title="French">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ko">
+          
+          <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ru">
+          
+          <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" title="Russian">
+          
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'ko',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+</div>
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">2024.04-3</h1>
+  <h2 class="post-subtitle">4월 3주차 기록</h2>
+
+  <div class="post-meta">
+    <time class="dt-published" datetime="2024-04-15T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Apr 15, 2024
+    </time>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 47 mins</span>
+  </div>
+<div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a>
+</div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <h1 id="2024년-4월-15일">2024년 4월 15일</h1>
+
+<h2 id="1-10773번-제로">1. 10773번 제로</h2>
+
+<p>단순하게 0일때 리스트에 있는 마지막을 제거하면 될 것 같아 바로 구현했다. 근데 int(input())으로 입력을 받으니 너무 느렸다. input=sys.stdin.readline()으로 받으니 시간이 600배 빨라졌다..!</p>
+
+<h3 id="알게-된-점">알게 된 점</h3>
+
+<ul>
+  <li>sys.stdin.readline() 이 input()보다 빠르다.</li>
+</ul>
+
+<h3 id="코드-비교">코드 비교</h3>
+
+<p>input=sys.stdin.readline()으로 대체</p>
+
+<h3 id="구현-코드">구현 코드</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">answer</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">answer</span><span class="p">))</span>
+    
+<span class="o">--</span> <span class="n">변경</span> <span class="n">후</span> <span class="n">코드</span> <span class="o">--</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">k</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">answer</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">answer</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="1-18110번-solvedac">1. 18110번 solved.ac</h2>
+
+<p>그냥 단순하게 리스트에 넣고 반올림 하면 되겠구나 했다. round()함수를 썼더니 잘 안돼서 질문게시판을 보았는데 몰랐던 round함수의 규칙이 있었다! 또한, 시간초과가 돼서 for문으로 기존에 하나하나 지우던걸 slicing으로 해결했다. 그리고 문제를 찬찬히 보자! 0일때도 미리미리 예외처리 하기!</p>
+
+<h3 id="알게-된-점-1">알게 된 점</h3>
+
+<ul>
+  <li>반올림은 5이상에서 5미만 (1,2,3,4)에서 버린다. 이걸 사사오입이라고 하는데 round는 오사오입이다.  5초과에서 올올리며, 5인경우 앞자리가 짝수인 경우 버리고 홀수인 경우 올린다!!
+    <ul>
+      <li>ex) round(2.5)=2, round(3.5)=</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="코드-비교-1">코드 비교</h3>
+
+<p>생각해보면 차례로 빼기 때문에 굳이 2차원 리스트로 만들 필요가 없다. 또한 index=0에 있는 것이 최댓값이면 빼면 된다. 이때 순서를 알기를 원하는 m이 0이면 멈춘다. 하나를 뺏기 때문에 index값을 하나를 줄인다. 만약 순서를 옮겨야 하는 상황이고 index가 0이면 index를 맨 끝값으로 옮긴다.(0에서 -1해서 앞으로 갈 수 없기 때문에) 그게 아니면 list에서 1를 빼주며 앞으로 옮기는 느낌을 준다.</p>
+
+<p>즉 실제로 옮기는게 아니라 우리가 알고 싶은 값만 옮기면 되기에 그 수만 조작해준다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">files</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="nb">max</span><span class="p">(</span><span class="n">files</span><span class="p">):</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">break</span>
+            <span class="n">index</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="n">files</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">index</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">index</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="n">a</span> <span class="o">=</span> <span class="n">files</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">files</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="구현-코드-1">구현 코드</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">answer</span> <span class="o">=</span><span class="p">[]</span>
+<span class="k">def</span> <span class="nf">rounds</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="n">n</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">n</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+        <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">rounds</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="mf">0.15</span><span class="p">)</span>
+    <span class="n">answer</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">answer</span><span class="p">[</span><span class="n">count</span><span class="p">:</span><span class="n">n</span><span class="o">-</span><span class="n">count</span><span class="p">]</span>
+
+    <span class="k">print</span><span class="p">((</span><span class="n">rounds</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">answer</span><span class="p">))))</span>
+</code></pre></div></div>
+
+<h1 id="2024년-4월-17일">2024년 4월 17일</h1>
+
+<p>목표</p>
+
+<ul>
+  <li>4문제 풀기</li>
+</ul>
+
+<h2 id="1-1966번-프린터-큐">1. 1966번 프린터 큐</h2>
+
+<p>구현에서 계속 오류 나서 고치느라 힘들었다. 체계적인 구조부터 생각하고 구현하는 게 시간을 단축하지 않을까?</p>
+
+<h3 id="알게-된-점-2">알게 된 점</h3>
+
+<ul>
+  <li>반올림은 5이상에서 5미만 (1,2,3,4)에서 버린다. 이걸 사사오입이라고 하는데 round는 오사오입이다.  5초과에서 올올리며, 5인경우 앞자리가 짝수인 경우 버리고 홀수인 경우 올린다!!
+    <ul>
+      <li>ex) round(2.5)=2, round(3.5)=3</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="구현-코드-2">구현 코드</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">a</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">files</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">()):</span>
+        <span class="n">files</span><span class="p">.</span><span class="n">append</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="n">idx</span><span class="p">])</span>
+        <span class="n">idx</span><span class="o">+=</span><span class="mi">1</span>
+    
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        
+    <span class="k">while</span> <span class="n">files</span><span class="p">:</span>
+        <span class="n">priority</span><span class="p">,</span><span class="n">idx</span> <span class="o">=</span> <span class="n">files</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">files</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">priority</span><span class="o">&lt;</span><span class="nb">max</span><span class="p">(</span><span class="n">files</span><span class="p">,</span><span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="c1">#인쇄하지 않고 뒤에 재배치
+</span>                <span class="n">files</span><span class="p">.</span><span class="n">append</span><span class="p">([</span><span class="n">priority</span><span class="p">,</span><span class="n">idx</span><span class="p">])</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1">#인쇄
+</span>                <span class="n">count</span> <span class="o">+=</span><span class="mi">1</span>
+                <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span><span class="n">m</span><span class="p">:</span>
+                    <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span> <span class="n">m</span><span class="p">:</span>
+                <span class="c1">#인쇄하고 출력
+</span>                <span class="n">count</span> <span class="o">+=</span><span class="mi">1</span>
+                <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+                <span class="k">break</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1">#인쇄만 하는 경우
+</span>                <span class="n">count</span> <span class="o">+=</span><span class="mi">1</span>
+                <span class="k">break</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">answer</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>    
+                    
+</code></pre></div></div>
+
+<h2 id="2-2108번-통계학">2. 2108번 통계학</h2>
+
+<p>그냥 통계를 출력하는 것. 여기에서 Counter로 빈도를 판별했다. 만약 빈도가 같으면 두번 째로 작은 값을 출력하는게 어려웠었는데, 가장 큰 값을 아니까, 그 빈도를 가진 숫자들은 전부 list에 넣고, sort()해서 맨 앞 값을 제거해줘서 해결했다.</p>
+
+<h3 id="코드-비교-2">코드 비교</h3>
+
+<p>절댓값이 4000이 넘지 않으므로 정수 전체는 8001개이기에 이 값을 지닌 list를 선언한다. 이후, 그 값이 있으면 그자리에 1을 더해준다. (이전에도 봤던 구현이다!) -1인경우 -1인 index는 없기에, 4000을 기준으로 앞뒤 배치를 해준다. 그리고 그렇게 완성된 코드를 전부 돌면서 max count값으로 비교하거나(이건 만든 리스트의 max, 갯수로 +=1을 해줬기에),  값이 있는 경우 더하거나 max값이나 min값을 찾는다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numbers</span><span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">8001</span> 
+<span class="c1">#리스트 만들기
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">stdin</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">counts</span><span class="p">[</span><span class="n">num</span><span class="o">+</span><span class="mi">4000</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#있으면 추가 1
+</span>        
+ <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8001</span><span class="p">):</span>
+	 <span class="n">num</span> <span class="o">=</span> <span class="n">i</span><span class="o">-</span><span class="mi">4000</span> <span class="c1">#처음에 4000에서 더해줬으니 
+</span>	 <span class="n">s</span> <span class="o">+=</span> <span class="n">num</span><span class="o">*</span><span class="n">counts</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="c1">#총 합은 갯수*number
+</span>	 <span class="k">if</span> <span class="n">cnt</span> <span class="o">==</span> <span class="n">maxc</span> <span class="ow">and</span> <span class="n">mcnt</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span> <span class="n">최대빈도수</span><span class="p">,</span> <span class="n">최초거나</span>
+			<span class="c1">#그 다음작은값, 왜냐 작은것부터 보기 때문에 가능
+</span>            <span class="n">mode</span> <span class="o">=</span> <span class="n">num</span> 
+            <span class="n">mcnt</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#최대 빈도 값 세기
+</span></code></pre></div></div>
+
+<h3 id="구현-코드-3">구현 코드</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="c1">#수의 개수
+</span><span class="n">numbers</span><span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">numbers</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()))</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span><span class="o">/</span><span class="n">n</span><span class="p">))</span> <span class="c1">#산술평균
+</span><span class="n">numbers</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">commons</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">numbers</span><span class="p">).</span><span class="n">most_common</span><span class="p">()</span>
+<span class="n">max_count</span> <span class="o">=</span> <span class="n">commons</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">mins</span>  <span class="o">=</span> <span class="p">[]</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">commons</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">max_count</span><span class="p">:</span><span class="n">ㅇㄷ</span>
+        <span class="n">mins</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">break</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">mins</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+    <span class="n">mins</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="k">del</span> <span class="n">mins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mins</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span><span class="o">-</span><span class="nb">min</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h1 id="2024년-4월-18일">2024년 4월 18일</h1>
+
+<h2 id="1-1929번-소수-구하기">1. 1929번 소수 구하기</h2>
+
+<p>에라토스테네스의 체를 떠올렸다! 문제는 어떻게 구현했는지 매번 까먹는다. 이번엔 잘 기억해보자.</p>
+
+<h3 id="코드-비교-3">코드 비교</h3>
+
+<ul>
+  <li>m~n사이에 있는 소수만 알면 된다. 따라서 range를 (m,n+1)로 설정하자</li>
+  <li>2부터 알아야 할 숫자 제곱근까지, 나눠지면 멈춤. (약수 존재므로 소수가 아님_)</li>
+</ul>
+
+<h3 id="구현-코드-4">구현 코드</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">().</span><span class="n">strip</span>
+<span class="n">start</span><span class="p">,</span><span class="n">end</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span> 
+<span class="n">primes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="bp">False</span><span class="p">,</span><span class="bp">False</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="bp">True</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">end</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">end</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span><span class="c1">#왜 a[i]냐하면, a에서 2부터 True가 뜨기 때문에 이 배수를 다 제거!
+</span>        <span class="n">primes</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span><span class="c1">#소수의 배수를 다 제거 
+</span>            <span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>    
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">primes</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span><span class="o">&gt;=</span><span class="n">start</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="2-1654번-랜선-자르기">2. 1654번 랜선 자르기</h2>
+
+<p>일단 혹시 해서 이진 탐색으로 하지 않고 떠오르는 걸 했는데 역시나.. 시간초과 뜨고 바로 코드를 수정했다. 아직 이진 탐색 중 최댓값을 찾는 게 미숙해서 좀 오래 걸렸다.</p>
+
+<h3 id="알게-된-점-3">알게 된 점</h3>
+
+<ul>
+  <li>arr = [int(input()) for i in range(k)] ← k번 동안 input 받아서 넣는 코드.</li>
+  <li>이 코드에서 처음 설정할 r값을 cables의 평균으로 놓는 것이 빠르다.</li>
+</ul>
+
+<h3 id="구현-코드-5">구현 코드</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">cables</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">k</span><span class="p">,</span><span class="n">n</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">())</span> 
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+    <span class="n">cable</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+    <span class="n">cables</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">cable</span><span class="p">)</span>
+    
+<span class="n">allCable</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">r</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">cables</span><span class="p">)</span>
+<span class="n">l</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">while</span> <span class="n">l</span><span class="o">&lt;=</span><span class="n">r</span><span class="p">:</span>
+    <span class="n">cut</span> <span class="o">=</span> <span class="p">(</span><span class="n">l</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
+    <span class="n">allCable</span> <span class="o">=</span>  <span class="nb">sum</span><span class="p">([</span><span class="n">x</span><span class="o">//</span><span class="n">cut</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">cables</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">allCable</span><span class="o">&gt;=</span><span class="n">n</span><span class="p">:</span> <span class="c1">#최댓값을 구해야 하기에 같아도 start를 올려 범위를 압축. 
+</span>        <span class="n">l</span> <span class="o">=</span> <span class="n">cut</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">cut</span> <span class="o">-</span><span class="mi">1</span> <span class="c1">#cut의 범위를 낮춰야 함. 
+</span><span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>        
+
+    
+</code></pre></div></div>
+
+<h3 id="2024년-4월-19일">2024년 4월 19일</h3>
+
+<h1 id="1-1874번-스택-수열">1. 1874번 스택 수열</h1>
+
+<p>!https://d2gd6pc034wcta.cloudfront.net/tier/9.svg</p>
+
+<h1 id="문제-분석-요약">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>| 2 초 | 128 MB |
+| — | — |</p>
+
+<p>입력 값을 보면서 숫자 순서대로 보면서 +와 -를 출력하는 문제</p>
+
+<p>현재 위치부터 숫자 순서대로 +(push)를 출력하고, pop을 할 때는 list로 pop여부를 파악하여 뺀다.</p>
+
+<h1 id="알고리즘-설계">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>실제로 pop과 push로 list의 값을 변경하면 시간이 오래 걸릴 것 같아, list[number]=bool 로 pop여부를 확인한다. → 그러나 그렇게 오래걸리진 않는 듯 하다.</p>
+
+<p>입력 값을 받은 list를 돌면서, 얼마나 push해야하고 pop해야하는 지 알고 그만큼 answer에 추가한다.</p>
+
+<p>이때, push를 해야하는 상황이면, 현재까지 push한 숫자~넣어야 하는 숫자 범위만큼 돈다.  현재 위치도 저장해 놓는다. (pop때 사용)</p>
+
+<p>pop을 해야하는 상황이면,  뺏는지 확인하고 현재 위치~ 넣어야 하는 숫자 만큼 돌면서 빼준다. 현재 위치도 저장 한다.</p>
+
+<p>만약, 이미 뺀 숫자를 요구해오면 No를 출력하라는 bool을 킨다!</p>
+
+<h1 id="코드">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span> <span class="o">=</span>  <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+<span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="bp">True</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">now</span> <span class="o">=</span><span class="mi">0</span>
+<span class="n">countPush</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">No</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">stack</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">now</span><span class="o">&lt;=</span><span class="n">i</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">countPush</span><span class="p">,</span><span class="n">i</span><span class="p">):</span>
+                <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'+'</span><span class="p">)</span>
+                <span class="n">countPush</span> <span class="o">+=</span><span class="mi">1</span>
+            <span class="n">now</span> <span class="o">=</span> <span class="n">i</span>
+            <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'-'</span><span class="p">)</span>
+            <span class="n">stack</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">now</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">stack</span><span class="p">[</span><span class="n">z</span><span class="p">]:</span>
+                    <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'-'</span><span class="p">)</span>
+                    <span class="n">stack</span><span class="p">[</span><span class="n">z</span><span class="p">]</span><span class="o">=</span><span class="bp">False</span>
+            <span class="n">now</span> <span class="o">=</span> <span class="n">i</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">No</span> <span class="o">=</span><span class="bp">True</span>
+        
+<span class="k">if</span> <span class="n">No</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'NO'</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">answer</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도">💡시간복잡도</h1>
+
+<p>for문 1개→ N</p>
+
+<p>2중 for문에서 append는 N</p>
+
+<p>print할때 N</p>
+
+<p>총 3N</p>
+
+<h1 id="틀린-이유">💡 틀린 이유</h1>
+
+<p>처음 코드도 비슷하게 구현했으나, pop을 했는지 안했는지를 체크할 방법이 없어서 이상한 값을 쓰다가 틀렸다.</p>
+
+<h1 id="틀린-부분-수정-or-다른-풀이">💡 틀린 부분 수정 or 다른 풀이</h1>
+
+<p>현재 값과 찾아야할 숫자를 비교하면서 그 숫자에 다다를때까지 push 해준다. 만약 맨 끝값을 빼봤는데(실제로 pop() 실행 )찾는 숫자가 아니면 NO를 뱉는다.</p>
+
+<p>위 구문에서 뺏으므로 append(’-’)를 해준다.</p>
+
+<p>위 코드는 list를 하나 적게 사용했다. pop()을 사용해 O(1)로 실제 리스트를 지워 추가 list구현을 하지 않았다. 또한 append 와 pop자체는 그리 오래걸리지 않으므로 구현 가능하다.</p>
+
+<p>312인경우, 123을 넣고, 3을 뺀다. 이후 1이 들어오면 pop을 할때 2부터 나오므로 NO!</p>
+
+<p>1432인 경우, 1넣고 제거, 234넣고 4제거, 이후 3, 2가 자연스럽게 빠지므로 통과!</p>
+
+<h1 id="느낀점-or-기억할정보">💡 느낀점 or 기억할정보</h1>
+
+<p>No의 조건을 이해하지 못해서 틀렸다. 처음에 ‘-’값이 그냥 단순히 길이보다 큰가? 하였는데 그게 아니었다! → 제대로 문제를 이해하고 풀자</p>
+
+<h1 id="2-1811번-마인크래프트">2. 1811번 마인크래프트</h1>
+
+<p>!https://d2gd6pc034wcta.cloudfront.net/tier/9.svg</p>
+
+<h1 id="문제-분석-요약-1">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>| 2 초 | 128 MB |
+| — | — |</p>
+
+<p>입력 값을 보면서 숫자 순서대로 보면서 +와 -를 출력하는 문제</p>
+
+<p>현재 위치부터 숫자 순서대로 +(push)를 출력하고, pop을 할 때는 list로 pop여부를 파악하여 뺀다.</p>
+
+<h1 id="알고리즘-설계-1">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>초안:</p>
+
+<p>00 01 02</p>
+
+<p>10 11 12</p>
+
+<p>20 21 22</p>
+
+<p>ㅂ. 위 블록 제거 후 인벤 2</p>
+
+<ol>
+  <li>이벤 꺼내서 놓기 1</li>
+</ol>
+
+<p>최소 시간.</p>
+
+<p>즉 비교해야한다.</p>
+
+<p>2초 걸리는 제거 vs 2 1초 걸리는 쌓기 ( 그러나 인벤이 차있어야 함)</p>
+
+<p>2차원 배열 돌면서</p>
+
+<p>평균값을 출력하고 그만큼 채우거나 버려야 함.</p>
+
+<p>이때 채우려면 인벤을 보고, 인벤이 없으면 무조건 2초로 카운트.</p>
+
+<h1 id="코드-1">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="p">,</span><span class="n">stock</span><span class="o">=</span>  <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+<span class="n">block</span> <span class="o">=</span><span class="nb">dict</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">())):</span>
+        <span class="n">block</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">block</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span> <span class="c1">#값이 없으면 0, 값이 있으면 +=1 
+</span><span class="n">ans</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="s">'inf'</span><span class="p">),</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">block</span><span class="p">.</span><span class="n">keys</span><span class="p">()),</span> <span class="nb">max</span><span class="p">(</span><span class="n">block</span><span class="p">.</span><span class="n">keys</span><span class="p">())</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">inven</span> <span class="o">=</span><span class="mi">0</span>
+    <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">block</span><span class="p">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">h</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span> 
+            <span class="n">count</span> <span class="o">+=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">h</span><span class="p">)</span><span class="o">*</span><span class="n">block</span><span class="p">[</span><span class="n">b</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span>
+        <span class="k">if</span> <span class="n">h</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span> 
+            <span class="n">count</span> <span class="o">+=</span> <span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="n">block</span><span class="p">[</span><span class="n">b</span><span class="p">]</span><span class="o">*</span><span class="mi">1</span>
+        <span class="n">inven</span> <span class="o">+=</span> <span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="n">block</span><span class="p">[</span><span class="n">b</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">inven</span><span class="o">&lt;=</span><span class="n">stock</span> <span class="ow">and</span> <span class="n">count</span><span class="o">&lt;=</span><span class="n">ans</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="p">[</span><span class="n">count</span><span class="p">,</span> <span class="n">h</span><span class="p">]</span>
+        
+<span class="k">print</span><span class="p">(</span><span class="o">*</span><span class="n">ans</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h1 id="시간복잡도-1">💡시간복잡도</h1>
+
+<h1 id="틀린-이유-1">💡 틀린 이유</h1>
+
+<p>이분 탐색으로 풀려다가 안돼서 답을 보게 되었다. 찾다가 이분 탐색으로 풀지 못하는 이유를 알았다. 프로그래머스의 입국심사 문제와 비슷하다고 생각해서 풀려고 했는데 아니었다.</p>
+
+<p><strong><em>이분 탐색 문제:</em> <code class="language-plaintext highlighter-rouge">비교할 기준값</code>, <code class="language-plaintext highlighter-rouge">탐색할 값</code>, <code class="language-plaintext highlighter-rouge">구하고자 하는 값</code>이 <em>존재한다.</em></strong></p>
+
+<p><strong><em><code class="language-plaintext highlighter-rouge">탐색할 값</code>과 <code class="language-plaintext highlighter-rouge">구하고자 하는 값</code>은 같은 domain을 가진다. 입국 심사 문제의 경우 탐색할 값과 구하고자 하는 값이 time domain으로 같았지만,</em></strong></p>
+
+<p><strong><em>이 문제의 경우 탐색할 값(돌아서 볼 값)은 height, 구하고자 하는 값은 time이기에 이분 탐색이 불가하다.</em></strong></p>
+
+<h1 id="틀린-부분-수정-or-다른-풀이-1">💡 틀린 부분 수정 or 다른 풀이</h1>
+
+<p>최대 높이가 267이므로 257칸의 리스트를 미리 선언한다.그리고 각 index=블록의 높이가 되며, 그 블록의 갯수를 value 값에 담는다. 즉 list[높이]=높이에 따른 블록 갯수 .</p>
+
+<p>모든 블록의 높이를 다 더하고, 인벤토리에 있는 값에 그 값을 더한다.</p>
+
+<p>그 값을 2배 한것(왜냐하면 모든것을 뺄 때 최대 2초가 걸리며, 그때 인벤토리에는 모든 1크기의 블럭이 죄다 담기기 때문이다.)</p>
+
+<p>답은 (최소 시간, 최대 높이) 높이 최댓값을 2배*모든 블럭 설정하고, time의 최소값은 0으로 설정한다.</p>
+
+<p>list를 돌때마다 b가 0보다 작아지면 멈추고 min함수를 활용하여 answer가 최대인지 본다. 이때 높이는 최댓값이어야 하므로 index값은 -index로 비교해줘야 한다. 그리고 값을 재 설정해준다.</p>
+
+<p>돌아보는 높이에 있는 블록을 i라하면, 이 갯수를 need에 넣는다.</p>
+
+<p>모든 블럭 갯수를 have에 넣으면, 각 range를 돌때마다 0층 최대 갯수- 이미 존재하는 블럭을 뺀다. (즉, 그 층에서 마지막으로 끝나는 블럭만 뺀다. ) t에는 현재까지 센 블럭의 갯수를 넣는다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="k">def</span> <span class="nf">sol</span><span class="p">():</span>
+    <span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+    <span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">257</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">()):</span>
+            <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="n">have</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">257</span><span class="p">))</span>
+    <span class="n">ans</span><span class="o">=</span><span class="p">(</span><span class="n">have</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">need</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">t</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">nm</span><span class="o">=</span><span class="n">n</span><span class="o">*</span><span class="n">m</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">257</span><span class="p">):</span>
+        <span class="n">need</span><span class="o">+=</span><span class="n">t</span>
+        <span class="n">have</span><span class="o">-=</span><span class="n">nm</span><span class="o">-</span><span class="n">t</span>
+        <span class="n">t</span><span class="o">+=</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">have</span><span class="o">+</span><span class="n">b</span><span class="o">-</span><span class="n">need</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ans</span><span class="o">=</span><span class="nb">min</span><span class="p">((</span><span class="n">have</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="n">need</span><span class="p">,</span><span class="o">-</span><span class="n">i</span><span class="p">),</span><span class="n">ans</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">ans</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="o">-</span><span class="n">ans</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">sol</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h1 id="느낀점-or-기억할정보-1">💡 느낀점 or 기억할정보</h1>
+
+<p>이분 탐색을 쓸 수 있는 지 파악하고 쓰자.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">비교할 기준값</code>, <code class="language-plaintext highlighter-rouge">탐색할 값</code>,=(같은 영역 값)=<code class="language-plaintext highlighter-rouge">구하고자 하는 값</code></strong></p>
+
+<p>2024년 4월 21일</p>
+
+<h1 id="1-11723번-집합">1. 11723번 집합</h1>
+
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/9227b598-1ec1-4b0e-83b7-74391ed84d29/e1d22fa4-236b-4041-abf0-b6fae5d4cb3b/Untitled.png" alt="Untitled"></p>
+
+<p>연산 수행 프로그램.</p>
+
+<h1 id="문제-분석-요약-2">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>string과 number를 받고, 각 조건처럼 연산을 수행하여 출력하는 문제.</p>
+
+<h1 id="알고리즘-설계-2">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>input을 받고, split으로 나눈 것을 각각 대입하면서 연산을 수행한다.</p>
+
+<h1 id="코드-2">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">number</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">sentence</span> <span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">do</span><span class="p">,</span><span class="n">n</span> <span class="o">=</span> <span class="n">sentence</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">do</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">do</span><span class="o">==</span><span class="s">'add'</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="n">n</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">number</span><span class="p">:</span>
+            <span class="n">number</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">do</span><span class="o">==</span><span class="s">'remove'</span><span class="p">:</span> <span class="n">number</span><span class="p">.</span><span class="n">discard</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">do</span><span class="o">==</span><span class="s">'check'</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">number</span><span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">do</span><span class="o">==</span><span class="s">'toggle'</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">number</span><span class="p">:</span>
+            <span class="n">number</span><span class="p">.</span><span class="n">discard</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">number</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">do</span><span class="o">==</span><span class="s">'all'</span><span class="p">:</span>
+        <span class="n">number</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">21</span><span class="p">)}</span><span class="c1">#시간 복잡도를 위해선 [1,2,3..20]을 직접 대입하기
+</span>    <span class="k">elif</span> <span class="n">do</span><span class="o">==</span><span class="s">'empty'</span><span class="p">:</span>
+        <span class="n">number</span><span class="o">=</span><span class="nb">set</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h1 id="시간-복잡도">💡시간 복잡도</h1>
+
+<h1 id="틀린-이유-2">💡 틀린 이유</h1>
+
+<p>중간중간 코드를 잘못 짰다. 없으면 출력하는 것을 제대로 체크하지 못했다.</p>
+
+<p>또한 값을 받을 때 list형태로 받았으면서 all과 같이 len이 1일때 do=sentence[0]를 빼먹었다.</p>
+
+<h1 id="틀린-부분-수정-or-다른-풀이-2">💡 틀린 부분 수정 or 다른 풀이</h1>
+
+<p>range를 쓰지 않고 {1,2,3,4,…20}으로 된 리스트를 바로 넣는 것이 시간 입장에선 빠르다.</p>
+
+<p>또한 굳이 set으로 풀 필요가 없다. list로 풀어도 좋다. 어차피 set형식으로 풀라하지도 않았으니!</p>
+
+<h1 id="느낀점-or-기억할정보-2">💡 느낀점 or 기억할정보</h1>
+
+<p>set이라고 해서 곧이곧대로 set이라고 풀지 않아도 된다!</p>
+
+<p>set에서 지울때, remove와 discard 두 개가 있는데, discard의 경우 없는 값을 지우라고 해도 에러가 나지 않는다. 이는 string의 find()와 index()도 비슷하다. find에서 없으면 -1을 return하지만 index는 Error. list에서도 index()도 없으면 Error</p>
+
+<p>list에서 pop, remove, del 같이 지우는 기능에 없는 값을 지우면 전부 Error.</p>
+
+<h1 id="1-1620번-나는야-포켓몬-마스터-이다솜">1. 1620번 나는야 포켓몬 마스터 이다솜</h1>
+
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/9227b598-1ec1-4b0e-83b7-74391ed84d29/726b6de3-8693-4828-a4ff-cffca22a71c8/Untitled.png" alt="Untitled"></p>
+
+<h1 id="문제-분석-요약-3">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>키와 값으로 연결된 값을 출력한다. list보다 dict가 빠르므로 dictionary를 활용한다.</p>
+
+<h1 id="알고리즘-설계-3">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>알파벳을 key로 가지는 dictionary와 번호를 key로 가지는 dictionary로 입력값을 출력한다.</p>
+
+<h1 id="코드-3">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#83440KB	288ms
+</span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+
+<span class="n">name</span><span class="o">=</span> <span class="n">defaultdict</span><span class="p">()</span>
+<span class="n">number</span><span class="o">=</span><span class="n">defaultdict</span><span class="p">()</span>
+<span class="n">a</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span><span class="n">s</span><span class="p">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">a</span><span class="p">))</span>
+<span class="n">book</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[:</span><span class="n">n</span><span class="p">]</span>
+<span class="n">question</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="n">n</span><span class="p">:]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">name</span><span class="p">[</span><span class="n">book</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+    <span class="n">number</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">book</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    
+<span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">question</span><span class="p">:</span>
+    
+    <span class="k">if</span> <span class="n">q</span><span class="p">.</span><span class="n">isalpha</span><span class="p">():</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="n">q</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">q</span><span class="p">)])</span>
+
+<span class="c1">#메모리와 시간 줄인 버전
+#74264KB	228ms
+</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+<span class="n">a</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span><span class="n">s</span><span class="p">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">a</span><span class="p">))</span>
+<span class="n">book</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[:</span><span class="n">n</span><span class="p">]</span>
+<span class="n">question</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="n">n</span><span class="p">:]</span>
+<span class="n">name_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="n">idx</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span><span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">book</span><span class="p">)}</span>
+
+<span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">question</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">q</span><span class="p">.</span><span class="n">isalpha</span><span class="p">():</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">name_dict</span><span class="p">[</span><span class="n">q</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">book</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">q</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-2">💡시간복잡도</h1>
+
+<h1 id="틀린-이유-3">💡 틀린 이유</h1>
+
+<p>좀 더 오래걸린 이유! dict를 하나 더 만들어서</p>
+
+<h1 id="틀린-부분-수정-or-다른-풀이-3">💡 틀린 부분 수정 or 다른 풀이</h1>
+
+<p>굳이 dict를 두 개 만들어서 할 필요 없이, input이 애초부터 순서에 맞게 들어오므로 그것을 그대로 쓰면 된다!</p>
+
+<p>또한, 읽을때 readlines()에 개행문자까지 전부 다 읽혀서 애매하다면, sys.stdin.read().splitlines()로 각 데이터를 읽어오면 된다. 이러면 한줄씩 문자열을 전부 읽을 수 있다. (대신 입력이 다 들어오므로, n과m값은 lins[0]으로 따로 처리해주고 나머지 값들도 lines[1,n+1]로 처리해야한다. . )</p>
+
+<h1 id="느낀점-or-기억할정보-3">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>sys.stdin.read().splitlines()로 각 데이터를 읽어오면 된다.</li>
+  <li>순서대로 값이 들어올 때, 아예 값을 읽어서 생성되는 list를 활용하자!</li>
+  <li>name_dict = {name:idx+1 for idx,name in enumerate(book)} 형식처럼 dict값을 설정하는 게 가능하다.</li>
+</ul>
+
+<h1 id="3-1764번-듣보잡">3. 1764번 듣보잡</h1>
+
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/9227b598-1ec1-4b0e-83b7-74391ed84d29/726b6de3-8693-4828-a4ff-cffca22a71c8/Untitled.png" alt="Untitled"></p>
+
+<h1 id="문제-분석-요약-4">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>2초 256MB</p>
+
+<h1 id="알고리즘-설계-4">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>set으로 설정하고 교집합을 구한다.</p>
+
+<h1 id="코드-4">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">lines</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">read</span><span class="p">().</span><span class="n">splitlines</span><span class="p">()</span>
+<span class="n">n</span><span class="p">,</span><span class="n">m</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">split</span><span class="p">())</span>
+<span class="n">nListen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">nSee</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="n">nListen</span><span class="p">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">nSee</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">answer</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">answer</span><span class="p">)):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-3">💡시간복잡도</h1>
+
+<p>2N정도</p>
+
+<h1 id="느낀점-or-기억할정보-4">💡 느낀점 or 기억할정보</h1>
+
+<p>교집합은 intersection으로 구하면 된다.</p>
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<a class="previous" href="/jekyll-theme-yat/book/2024/04/12/designtrap.html" title="디자인트랩">디자인트랩</a><a class="next" href="/jekyll-theme-yat/baekjoon/2024/04/22/4weeks.html" title="2024.04-4">2024.04-4</a>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li class="">
+          <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/07/11/14502.html" title="12865번 평범한 배낭">
+            12865번 평범한 배낭<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/04/22/4weeks.html" title="2024.04-4">
+            2024.04-4<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/20/2805.html" title="2805번 나무자르기">
+            2805번 나무자르기<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/05/1931.html" title="1931번 회의실 배정">
+            1931번 회의실 배정<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+</ul>
+    </div>
+<div class="post-comments">
+<div id="utterances-placeholder"></div>
+<script>
+  const utterancesThemeFromDataTheme = () => {
+    const dataTheme = document.documentElement.getAttribute('data-theme');
+    return `github-${dataTheme}`;
+  };
+
+  const setUtterancesTheme = () => {
+    const iframe = document.querySelector('.utterances-frame');
+    if (iframe) {
+      const message = {
+        type: 'set-theme',
+        theme: utterancesThemeFromDataTheme()
+      };
+      iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+    }
+  }
+
+  // dynamic change
+  const observer = new MutationObserver((mutationsList, observer) => {
+    for (let mutation of mutationsList) {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+        setUtterancesTheme();
+      }
+    }
+  });
+  observer.observe(document.documentElement, { attributes: true, childList: false, subtree: false });
+
+  let utterancesScript = document.createElement('script');
+  utterancesScript.async = true;
+  utterancesScript.src = 'https://utteranc.es/client.js';
+  utterancesScript.crossOrigin = 'anonymous';
+  utterancesScript.setAttribute('issue-term', 'pathname');
+  utterancesScript.setAttribute('label', '');
+  utterancesScript.setAttribute('repo', 'Yubeenpark/Yubeenpark.github.io');
+  utterancesScript.setAttribute('theme', utterancesThemeFromDataTheme());
+
+  const placeholder = document.getElementById('utterances-placeholder');
+  placeholder.parentNode.replaceChild(utterancesScript, placeholder);
+</script>
+</div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Unpublished Work <span class="copyleft">©</span> 2017-2024 Yubeenpark</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/jekyll-theme-yat/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>2024.04-4 | Nutty</title>
+<meta name="generator" content="Jekyll v3.9.5">
+<meta property="og:title" content="2024.04-4">
+<meta name="author" content="Yubeenpark">
+<meta property="og:locale" content="ko">
+<meta name="description" content="2024.04-4">
+<meta property="og:description" content="2024.04-4">
+<link rel="canonical" href="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/04/22/4weeks.html">
+<meta property="og:url" content="https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/04/22/4weeks.html">
+<meta property="og:site_name" content="Nutty">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-04-22T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="2024.04-4">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yubeenpark"},"dateModified":"2024-04-22T00:00:00+00:00","datePublished":"2024-04-22T00:00:00+00:00","description":"2024.04-4","headline":"2024.04-4","mainEntityOfPage":{"@type":"WebPage","@id":"https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/04/22/4weeks.html"},"url":"https://yubeenpark.github.io/jekyll-theme-yat/baekjoon/2024/04/22/4weeks.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="canonical" href="https://yubeenpark.github.io">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://yubeenpark.github.io/jekyll-theme-yat/feed.xml" title="Nutty">
+<!-- Google tag (gtag.js) -->
+<script>
+  function initGoogleAnalytics() {
+    var doNotTrack = (window.doNotTrack === "1" || navigator.doNotTrack === "1" ||
+      navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1");
+    var enableDNT = "true" == "true";
+
+    if (!enableDNT || !doNotTrack) {
+      var measurementId = 'G-GJQXV24HLR';
+
+      (function(src) {
+        var tag = document.createElement('script');
+        tag.src = src;
+        tag.async = true;
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      })('https://www.googletagmanager.com/gtag/js?id=' + measurementId);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', measurementId);
+    }
+  }
+  window.addEventListener("load", initGoogleAnalytics);
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="Nutty" src="" onerror="this.style.display='none'">
+  Nutty
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/jekyll-theme-yat/about.html">ABOUT</a><a class="page-link" href="/jekyll-theme-yat/archives.html">ARCHIVES</a><a class="page-link" href="/jekyll-theme-yat/categories.html">CATEGORIES</a><a class="page-link" href="/jekyll-theme-yat/">HOME</a><a class="page-link" href="/jekyll-theme-yat/tags.html">TAGS</a>
+
+
+
+
+
+
+
+
+
+<div class="page-link" style="display: inline;">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<div class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="fr">
+          
+          <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" title="French">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ko">
+          
+          <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ru">
+          
+          <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" title="Russian">
+          
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'ko',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+</div>
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">2024.04-4</h1>
+  <h2 class="post-subtitle">4월 4주차 기록</h2>
+
+  <div class="post-meta">
+    <time class="dt-published" datetime="2024-04-22T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Apr 22, 2024
+    </time>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 45 mins</span>
+  </div>
+<div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#Baekjoon">#Baekjoon</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%EC%BD%94%ED%85%8C%20%EA%B3%B5%EB%B6%80">#코테 공부</a>
+</div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <h1 id="202404-4">2024.04-4</h1>
+
+<p>2024년 4월 22일</p>
+
+<h1 id="1-11047번-동전-0">1. 11047번 동전 0</h1>
+
+<blockquote>
+  <p><strong>실버 IV</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>원하는 값과 주어진 값으 나눗셈과 나머지로 푸는 문제.</p>
+
+<p>여기서 i≥2인경우 Ai가 Ai-2라서 쉽게 풀린다.</p>
+
+<h1 id="알고리즘-설계">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>결국 500원 1개= 100원 5개 가치이므로 금액이 높은 순으로 최대한 값을 빼면서 최솟값을 구하자.</p>
+
+<h1 id="코드">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">lines</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">read</span><span class="p">().</span><span class="n">splitlines</span><span class="p">()</span>
+<span class="n">n</span><span class="p">,</span><span class="n">k</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">split</span><span class="p">())</span>
+<span class="n">coin</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">:]))</span>
+<span class="n">coin</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">m</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">count</span> <span class="o">=</span><span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">coin</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">k</span><span class="o">&gt;=</span><span class="n">i</span><span class="p">:</span>
+        
+        <span class="n">count</span> <span class="o">+=</span> <span class="n">k</span><span class="o">//</span><span class="n">i</span> <span class="c1">#몫
+</span>        <span class="n">k</span> <span class="o">=</span> <span class="n">k</span><span class="o">%</span><span class="n">i</span> <span class="c1">#나머지
+</span>        
+<span class="k">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도">💡시간복잡도</h1>
+
+<p>N</p>
+
+<h1 id="다른-풀이">💡 다른 풀이</h1>
+
+<p>굳이 sort하지 않고, range(n-1,-1,-1)로 역순으로 돌면 된다!</p>
+
+<h1 id="느낀점-or-기억할정보">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>역순으로 돌땐 range(x,t,-1)로 -1를 세번째 값(증가 숫자)을 설정하자.</li>
+</ul>
+
+<h1 id="2-11399번-atm">2. 11399번 ATM</h1>
+
+<blockquote>
+  <p><strong>실버 IV</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약-1">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>걸리는 시간을 예시처럼 오름차순으로 정렬하고 중복 더해주고 출력.</p>
+
+<h1 id="알고리즘-설계-1">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>오름차순으로 정렬 뒤, 쌓인 값을 더하자.</p>
+
+<h1 id="코드-1">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">person</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span>
+<span class="n">person</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">time</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">alltime</span> <span class="o">=</span><span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">person</span><span class="p">:</span>
+    <span class="n">alltime</span> <span class="o">+=</span><span class="n">i</span>
+    <span class="n">time</span> <span class="o">+=</span> <span class="n">alltime</span>
+<span class="k">print</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-1">💡시간복잡도</h1>
+
+<p>O(NlogN)+N</p>
+
+<h1 id="3-17219번-비밀번호-찾기">3. 17219번 비밀번호 찾기</h1>
+
+<blockquote>
+  <p><strong>실버 IV</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약-2">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>입력값으로 key와 value를 매칭하고 출력.</p>
+
+<h1 id="알고리즘-설계-2">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>입력 값을 받고, url주소를 key로 설정한 뒤, value를 설정한다.</p>
+
+<h1 id="코드-2">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#70936KB 224ms
+</span>
+<span class="c1">#시간복잡도 순서대로 나열
+#splitlines()로 받은 경
+</span><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">read</span><span class="p">().</span><span class="n">splitlines</span><span class="p">()</span>
+<span class="n">n</span> <span class="p">,</span><span class="n">m</span><span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">split</span><span class="p">())</span>
+<span class="n">saved</span> <span class="o">=</span> <span class="nb">input</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> 
+<span class="n">search</span> <span class="o">=</span> <span class="nb">input</span><span class="p">[</span><span class="o">-</span><span class="n">m</span><span class="p">:]</span>
+
+<span class="n">dic</span> <span class="o">=</span><span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">saved</span><span class="p">:</span>
+    <span class="n">site</span><span class="p">,</span> <span class="n">secret</span> <span class="o">=</span> <span class="n">i</span><span class="p">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">dic</span><span class="p">[</span><span class="n">site</span><span class="p">]</span> <span class="o">=</span> <span class="n">secret</span>
+    
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">search</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dic</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+
+<span class="c1">#49208KB	244ms
+#readline()으로 받은 경우 
+</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">dic</span> <span class="o">=</span><span class="p">{}</span>
+<span class="nb">input</span><span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span> <span class="p">,</span><span class="n">m</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">site</span><span class="p">,</span> <span class="n">secret</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">dic</span><span class="p">[</span><span class="n">site</span><span class="p">]</span> <span class="o">=</span> <span class="n">secret</span>
+    
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+    <span class="n">search</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dic</span><span class="p">[</span><span class="n">search</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="느낀점-or-기억할정보-1">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>splitlines로 리스트를 각각 생성할 경우, 메모리를 많이 잡아 먹는다. 차라리 for문으로 한번에 돌고, 숫자 n+1을 넘으면 출력하게 해야할 듯.</li>
+</ul>
+
+<h1 id="4-1003번-피보나치-함수">4. 1003번 피보나치 함수</h1>
+
+<p>gs</p>
+
+<h1 id="문제-분석-요약-3">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>함수에서 0과 1이 나오는 규칙을 알아내고 출력하는 문제</p>
+
+<h1 id="알고리즘-설계-3">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>0과 1이  function 3부터 그 전을 더한 값으로 구성된다.</p>
+
+<p>0111235.. → 1+1=2, 2+1=3, 2+3=5</p>
+
+<p>1012358…→ 1+2=3, 2+3=5…</p>
+
+<p>이는 2인경우 0,1이 각각 1개이며, 3인경우 2(0,1)와 1 로 그 전의 숫자의 값을 그대로 사용하는 것을 볼 수 있다.</p>
+
+<p>따라서 list에 다음 값은, 이전 값과 현재값을 더한 것으로 누적하여 채워나간다.</p>
+
+<h1 id="코드-3">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">dic</span> <span class="o">=</span><span class="p">{}</span>
+<span class="n">number</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+
+<span class="n">countZero</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">countOne</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="n">countZero</span><span class="p">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
+<span class="n">countOne</span><span class="p">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">41</span><span class="p">):</span>
+    <span class="n">countOne</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">countOne</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="n">countOne</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">countZero</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">countZero</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="n">countZero</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="mi">5</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+    <span class="n">n</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">countZero</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">countOne</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="느낀점-or-기억할정보-2">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>splitlines로 리스트를 각각 생성할 경우, 메모리를 많이 잡아 먹는다. 차라리 for문으로 한번에 돌고, 숫자 n+1을 넘으면 출력하게 해야할 듯.</li>
+</ul>
+
+<p>2024년 4월 23일</p>
+
+<h1 id="1-1463번-1로-만들기">1. 1463번 1로 만들기</h1>
+
+<blockquote>
+  <p><strong>실버 IIV</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약-4">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>동적 계획을 사용한 문제 풀이</p>
+
+<h1 id="알고리즘-설계-4">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>동적 계획법으로 푼다.(메모이제이션 활용)</p>
+
+<p>요청된 숫자까지 값을 더해서 만든다.</p>
+
+<p>3과 2로 나누어 떨어지면 나눠진 값+1로 설정한다.</p>
+
+<p>→ ex) if 4면, 2→1을 활용하여 4→2→1이 됨. 2로 2나누면 1번,  4로 2나누면 2가 되어서 1번 + 2로 2나누면 1번 즉, dp[2] =1(2→1) 값에 +1를 해주는 꼴.</p>
+
+<p>여기서 1로 빼주는 것을 어디에 넣어야 할지, 최솟값을 얻어야 하는데 어떤 값이랑 비교해야하는 지 고민이었다.</p>
+
+<p>쉽게 생각하면, 6이 6→5→4→2→1인지 6이 6→2→1 인지는 min을 통해서 더 작은 값으로 업데이트 해주면 되고, 5같은 경우는 4에서 1을 더해주는 계산이 무조건 필요하기 때문에 우선적으로 이전 값에서 +1을 해주는 것을 기본 값으로 넣는다.</p>
+
+<p>왜냐하면 그 전 값에서 +1를 해주면, 최솟값은 확정 지을 수 없지만 그렇게 해서 숫자를 만들 수 있기 때문이다.</p>
+
+<p>3도 2+1로 만들 수 있고, 6도 5+1로 만들 수 있다. 다만 최소가 아닐 수도 있을</p>
+
+<h1 id="코드-4">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">n</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+<span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">3</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">//</span><span class="mi">3</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-2">💡시간복잡도</h1>
+
+<p>for문에서 사용되는 N</p>
+
+<h1 id="틀린-이유">💡 틀린 이유</h1>
+
+<p>접근 방식이 틀렸다. 사실 DP라는 것을 어렴풋이 풀면서 느꼈지만, 왜 DP지? 라는 의문이 들었다. 따라서 Dp일때 해당하는 특징을 고민했다.</p>
+
+<p>DP는 일단 메모이제이션이 가장 특징이다. 즉, 썼던 값을 재활용, 중복해서 사용하느냐에 따라 DP가 될지 결정된다. 여기서 3인경우 3→1 6인경우 6→3→1 9인경우 9→3→1 로 3→1 패턴을 그대로 쓰는 것을 볼 수 있다.</p>
+
+<p>그렇다면 최솟값을 넣어야하는데 어떻게 넣어야할 것인가? 어떤 값을 비교해야할 것인가가 의문이다.</p>
+
+<p>여기서 1을 빼거나 2나 3으로 나누거나 3가지 조건이 있다.</p>
+
+<h1 id="느낀점-or-기억할정보-3">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>그리디- 최적의 방법이 반례없이 끝까지 적용</li>
+  <li>동적 계획법: 메모이제이션 방법으로 중복 계산 값이 많을때 유용하다.  즉 문제를 나누고 재활용해서 전체 답 구하기!! 숫자가 증가할 수록, 아니면 다음 케이스에서 답을 구할때 이전 값을 사용하는지를 보자!</li>
+  <li>브루트 포스는 DFS,BFS가 있고, 그냥 다 보자! 라는 느낌.</li>
+</ul>
+
+<h1 id="2-2579번-계단-오르기">2. 2579번 계단 오르기</h1>
+
+<blockquote>
+  <p><strong>실버 IIV</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약-5">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>동적 계획을 사용한 최댓값 구하기</p>
+
+<h1 id="알고리즘-설계-5">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>동적 계획법으로 푼다.(메모이제이션 활용)</p>
+
+<p>조건: 1,2칸 가능, 연속 3칸 불가, 마지막 계단은 무조건 밟아야 한다.</p>
+
+<p>마지막 계단을 n으로 생각하면,</p>
+
+<p>n-1 + n ,  n-2+n 이 된다. 다만, n-1+n일때 n-2를 밟을 수 없으므로 n-3 조건을 추가해야한다.</p>
+
+<p>stairs로 각 계단의 숫자를 받고 dp라는 배열에다가 메모이제이션으로 값을 누적하여 저장한다.</p>
+
+<p>그렇다면 n n-1 n-3에서 n은 stairs 자체값인 stairs[n], 그리고 stairs[n-1] ( 만약 n-1이 dp면 누적값이 전부 들어오므로 안된다. 연속 될 수 있으니) 그리고 dp[n-3]</p>
+
+<p>stairs[n]  + dp[n-2]가 된다.</p>
+
+<h1 id="코드-5">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">n</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+<span class="n">stairs</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">().</span><span class="n">strip</span><span class="p">())</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+<span class="k">if</span> <span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">stairs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">elif</span> <span class="n">n</span><span class="o">==</span><span class="mi">2</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">stairs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">stairs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">stairs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">stairs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">stairs</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">stairs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span><span class="o">+</span><span class="n">stairs</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">stairs</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">stairs</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+</code></pre></div></div>
+
+<h1 id="시간복잡도-3">💡시간복잡도</h1>
+
+<p>for문에서 사용되는 N</p>
+
+<h1 id="틀린-이유-1">💡 틀린 이유</h1>
+
+<p>dp라는 것을 알고 구현하려고 했지만 식이 잘못되었다. 우선 1,2,3 등 앞에서 부터 생각하려니 머리가 아팠다. 또한 하나하나 식을 써가면서 해봤지만 제대로 된 예시나 식을 세우지 못했다. 정말 비슷하게 까지 접근했지만 dp에 stairs[i]가 포함되지 않은 값을 넣었고, 계속 헷갈리다가 답을 보게 되었다.</p>
+
+<h1 id="느낀점-or-기억할정보-4">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>1,2,3 부터 예시를 구해도 좋지만 결국 n을 뽑아내는 것이 중요하다. 단순하게 생각하자!</li>
+</ul>
+
+<p>2024년 4월 24일</p>
+
+<h1 id="1-2606번-바이러스">1. 2606번 바이러스</h1>
+
+<blockquote>
+  <p><strong>실버 III</strong></p>
+
+</blockquote>
+
+<h1 id="문제-분석-요약-6">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>union find를 활용한 문제.</p>
+
+<h1 id="알고리즘-설계-6">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>연결 되어 있고, 1에게 걸려있는 모든 값을 찾는 것이기 때문에 uion&amp;find(최고 부모)를 활용하여 1이 최고 부모인 것을 골라낸다.</p>
+
+<p>연결된 컴퓨터의 최고 부모를 설정한다. 이때 1이 부모여야 하므로 가장 작은 숫자가 부모가 되게끔 union에 설정한다.</p>
+
+<p>1 자신을 제외한 최고 부모가 1인 컴퓨터 갯수를 출력한다.</p>
+
+<h1 id="코드-6">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">n</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+<span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+<span class="n">edge</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">answer</span> <span class="o">=</span><span class="mi">0</span>
+<span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">parent</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">parent</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">!=</span><span class="n">a</span><span class="p">:</span>
+        <span class="n">parent</span><span class="p">[</span><span class="n">a</span><span class="p">]</span>  <span class="o">=</span> <span class="n">find</span><span class="p">(</span><span class="n">parent</span><span class="p">[</span><span class="n">a</span><span class="p">],</span><span class="n">parent</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">parent</span><span class="p">[</span><span class="n">a</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">parent</span><span class="p">):</span>
+    <span class="n">a</span><span class="o">=</span> <span class="n">find</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">parent</span><span class="p">)</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">find</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="n">parent</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
+        <span class="n">parent</span><span class="p">[</span><span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">parent</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">b</span>
+<span class="n">parent</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+    <span class="n">com1</span><span class="p">,</span><span class="n">com2</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+    <span class="n">union</span><span class="p">(</span><span class="n">com1</span><span class="p">,</span><span class="n">com2</span><span class="p">,</span><span class="n">parent</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">parent</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">find</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">parent</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span><span class="n">answer</span><span class="o">+=</span><span class="mi">1</span>
+<span class="k">print</span><span class="p">(</span><span class="n">answer</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-4">💡시간복잡도</h1>
+
+<p>for문에서 사용되는 n+부모 설정 최대 n</p>
+
+<h1 id="틀린-이유-2">💡 틀린 이유</h1>
+
+<p>보자마자 노드이므로 딕셔너리가 생각났다. 조금 더 쉬운 알고리즘이 있다는 힌트를 얻어 크루스칼에 주로 사용되는 union&amp;find를 활용해야겠다고 생각했다.</p>
+
+<ul>
+  <li>Union Find: Disjoint Set(공통 원소가 없는 부분 집합들)을 나타낼 때 사용하는 알고리즘. 형식은 Tree
+기본적인 세팅은 자기 자신이 부모이다. 또한 최고 부모의 부모는 자기 자신이다.
+    <ul>
+      <li>Union(x,y)
+        <ul>
+          <li>x와 y의 최고 부모를 설정한다. (집합을 합치는 연산)</li>
+        </ul>
+      </li>
+      <li>find(x)
+        <ul>
+          <li>x의 최고 부모를 찾는다. (x가 속한 집합의 대푯값을 찾는다)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">find</span><span class="p">(</span><span class="n">a</span><span class="p">):</span> <span class="c1">#결국 최고 부모는 자기 자신이므로, 
+</span>    <span class="k">if</span> <span class="n">parent</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">!=</span><span class="n">a</span><span class="p">:</span> <span class="c1">#a의 부모가 최고 부모가 아니면
+</span>        <span class="c1">#경로 압축 과정 Path Compression
+</span>        <span class="n">parent</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">find</span><span class="p">(</span><span class="n">parent</span><span class="p">[</span><span class="n">a</span><span class="p">])</span> <span class="c1"># 탐색했던 모든 값의 부모를 최고 부모로 재설정
+</span>    <span class="k">return</span> <span class="n">parent</span><span class="p">[</span><span class="n">a</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">a</span><span class="o">=</span> <span class="n">find</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">find</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span> <span class="c1">#여기서는 더 작은 값이 부모가 되도록 설정. 변경 가능. 
+</span>        <span class="n">parent</span><span class="p">[</span><span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">parent</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">b</span>
+	
+</code></pre></div></div>
+
+<p><strong>1-2, 2-3 가 들어와서  1-2-3 로 연결된 경우,</strong> (2의 부모1, 3의 부모2)</p>
+
+<p>parent[1,2,3] → [1,1,2]로 변했을 것이다. 이때  3-5를 위하여 find(3)를 할 경우.</p>
+
+<p>parent[3] ≠3이 아니라 2이다. 그러므로 find(parent[3] = 2)를 한다.</p>
+
+<p>여기서 find(2)값이 3의 부모가 된다.</p>
+
+<p>parent[2]는 2가 아닌 1이므로 find(1)을 한다. 여기서 또한 find(1)값이 2의 부모가 된다.</p>
+
+<p>parent[1]=1 즉 최고 부모므로, return으로 1을 돌려준다. 이후 3과 2의 부모는 1이 된다.</p>
+
+<p>이렇게 하여 find(x)를 한 경우, x의 최고 부모를 찾는 동시에 call한 모든 값의 부모가 최고 부모로 설정되어 경로를 압축할 수 있다.</p>
+
+<p>** 유의점은 find를 하지 않은 경우 &lt;<strong>1-2, 2-3 가 들어와서  1-2-3 로 연결된&gt;</strong> 이 상태가 그대로 유지되기에 parent[] 의 모든 값이 최고 부모라 단정지을 순 없다. 다만, 모든 값에 find()를 적용시켜주면 모든 부모가 최고 부모로 설정되어 parent의 모든 값이 최고부모가 된다.</p>
+
+<h1 id="느낀점-or-기억할정보-5">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>Union&amp;find 알고리즘.</li>
+</ul>
+
+<h1 id="2-9095번-123-더하기">2. 9095번 1,2,3 더하기</h1>
+
+<blockquote>
+  <p><strong>실버 III</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약-7">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>메모이제이션을 활용한 dp문제</p>
+
+<h1 id="알고리즘-설계-7">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>dp[나타낼 숫자] = 1,2,3으로 나타낼 수 있는 경우의 수</p>
+
+<p>의 형식으로 저장한다.</p>
+
+<p>dp[i]=dp[i-1]+ dp[i-2]+ dp[i-3]를 얻어낸 뒤 진행한다. 설명은 https://jyami.tistory.com/15 이 블로그를 참조하여 구체화 하였다.</p>
+
+<p>1은</p>
+
+<p>| 1 |
+| — |</p>
+
+<p>2는</p>
+
+<p>| 2
+1+ 1  |
+| — |</p>
+
+<p>3은</p>
+
+<p>| 3
+1 + 2
+1 + 2 + 1
+1 + 1 + 1 |
+| — |</p>
+
+<p>dp[4]는</p>
+
+<p>| 1 + dp(3) | 2 + dp(2) | 3 + dp(1) |
+| — | — | — |
+| 1 + 3
+1 + 1 + 2
+1 + 2 + 1
+1 + 1+ 1+ 1 | 2 + 2
+2 + 1 + 1 | 3 + 1 |</p>
+
+<p>dp[5]는</p>
+
+<p>| 1 + dp(4) | 2 + dp(3) | 3 + dp(2) |
+| — | — | — |
+| 1 + 1 + 3
+1 + 1 + 1 + 2
+1 + 1 + 2 + 1
+1 + 1 + 1+ 1+ 1
+1 + 2 + 2
+1 + 2 + 1 + 1
+1 + 3 + 1 | 2 + 3
+2 + 1 + 2
+2 + 2 + 1
+2 + 1+ 1+ 1 | 3 + 2
+3 + 1 + 1 |</p>
+
+<p>이처럼 n값의 이전 3개의 배열 값을 합한 것이다.</p>
+
+<h1 id="코드-7">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">n</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+<span class="n">dp</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">12</span>
+<span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">dp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">dp</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span> 
+    <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+    
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">ans</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-5">💡시간복잡도</h1>
+
+<p>2n</p>
+
+<h1 id="틀린-이유-3">💡 틀린 이유</h1>
+
+<p>시행착오가 좀 많았다.</p>
+
+<p>셀 수 있는 경우의 수가 수학적으로 떨어지지 않을까 하여 이것저것 대입해봤지만 나오지 않았고, 중간에 dp[3]=3으로 착각하는 바람에 다시 구했고… 어떻게 해서 저 점화식을 구했지만 얻어 걸린 느낌이었다. 즉, 설명하려고 하면 어려웠다.</p>
+
+<p>앞으로 저렇게 이전 dp,그 이전 dp의 계산 값을 그대로 이용하여 써내려가보자. 그대로 활용하니 메모이제이션 가능하지 않겠나!</p>
+
+<h1 id="느낀점-or-기억할정보-6">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>dp 알고리즘이 적용되는 이유는 반복이다!</li>
+</ul>
+
+<p>2024년 4월 25일</p>
+
+<h1 id="1-9375번-패션왕-신해빈">1. 9375번 <strong>패션왕 신해빈</strong>
+</h1>
+
+<blockquote>
+  <p><strong>실버 III</strong></p>
+</blockquote>
+
+<h1 id="문제-분석-요약-8">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>수학적으로 푸는 문제 (조합)</p>
+
+<h1 id="알고리즘-설계-8">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>해빈이가 같은 종류의 옷을 입지 않으면서 1개 이상의 옷을 입는 경우의 수를 출력</p>
+
+<p>이때 떠오른 아이디어는 a 종류의 옷을 입지 않는 경우의 수를 Ax로 추가하여 고려한다.</p>
+
+<p>즉, a종류에 1,2 의 아이템이 있다면, A1,A2,Ax로 1을 입는 경우, 2를 입는경우, x아무것도 입지 않는 경우를 계산한다. 여기서 중복은 Ax * Bx처럼 두 종류의 아이템 모두 x값을 선택할 때이므로 최종 값에 1을 빼준다.</p>
+
+<p>같은 이름이 들어오지 않으므로 종류만 같다면</p>
+
+<p>dic[옷 종류]=갯수</p>
+
+<p>의 형태로 저장한다.</p>
+
+<p>갯수를 돌면서,  갯수+ 1(입지 않는 경우의 수)를 answer에 곱해준다.</p>
+
+<p>답을 제출할 때 1(모두 입지 않는 수)를 answer에서 뺸다.</p>
+
+<h1 id="코드-8">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="n">n</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+    <span class="n">dic</span> <span class="o">=</span><span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+        <span class="n">name</span><span class="p">,</span> <span class="n">kind</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">()</span>
+        <span class="n">dic</span><span class="p">[</span><span class="n">kind</span><span class="p">]</span> <span class="o">+=</span><span class="mi">1</span>
+    <span class="n">ans</span> <span class="o">=</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">dic</span><span class="p">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">ans</span><span class="o">*=</span><span class="p">(</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>      
+    <span class="k">print</span><span class="p">(</span><span class="n">ans</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-6">💡시간복잡도</h1>
+
+<p>2n</p>
+
+<h1 id="헷갈렸던-이유">💡 헷갈렸던 이유</h1>
+
+<p>처음에 이 문제를 보고 이전에 비슷한 문제를 프로그래머스에서 푼 게 기억나서 그거대로 풀려고 했더니 식이 세워지질 않았다. 즉, (전체 경우의 수)-(중복해서 입는 수) 로 중복이 아닌 것을 구하려 했지만, 중복해서 입는 수가 엄청 구하기 어려웠다. 식이 안세워졌다. 따라서 포기하고 바로 직관적으로 풀었다.</p>
+
+<h1 id="느낀점-or-기억할정보-7">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>이전 기억에 의존하는 것이 아닌 활용해서 푸는 정도로만 이용하자.</li>
+</ul>
+
+<p>2024년 4월 26일</p>
+
+<h1 id="1-9461번-파도반-수열">1. 9461번 파도반 수열</h1>
+
+<blockquote>
+  <p><strong>실버 III</strong></p>
+
+</blockquote>
+
+<h1 id="문제-분석-요약-9">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>점화식을 찾아서 이전 값을 활용하는 dp문제</p>
+
+<h1 id="알고리즘-설계-9">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>그 다음 값이 어떤 값과 어떤 값을 활용해야 나오는지 점화식을 사용해서 알아낸 뒤에 배열을 활용해 값을 저장하여 푼다.</p>
+
+<p>삼각형은 각각 이전 삼각형에 영향을 받고 있는 것을 그림을 통해 알 수 있다. 따라서 dp의 메모이제이션을 활용하여 풀었다.</p>
+
+<p>dp[i] = dp[i-1] + dp[i-5]로 주어진 N의 최대 범위까지 구한 뒤, n의 값을 받고 출력 한다.</p>
+
+<h1 id="코드-9">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">n</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+<span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">90</span><span class="p">)]</span>
+<span class="n">dp</span><span class="p">.</span><span class="n">extend</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span>
+    <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-7">💡시간복잡도</h1>
+
+<p>n</p>
+
+<h1 id="느낀점-or-기억할정보-8">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>점화식을 구할 때, 규칙성을 찾아내기 위하여 비슷한 값을 증가하여 구해보자.</li>
+</ul>
+
+<h1 id="2-11659번-구간-합-구하기4">2. 11659번 구간 합 구하기4</h1>
+
+<blockquote>
+  <p><strong>실버 III</strong></p>
+
+</blockquote>
+
+<h1 id="문제-분석-요약-10">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>점화식을 구하여 dp의 메모이제이션을 활용하여 푸는 문제</p>
+
+<h1 id="알고리즘-설계-10">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>구간 합을 쉽게 구할 수 있는 점화식을 구한다.</p>
+
+<p>1 2 3 4를 dp에 저장하면</p>
+
+<p>1  1+2  1+2+3  1+2+3+4</p>
+
+<p>이럴 때 2~4번째 합은 2+3+4 = dp[3]-dp[0]가 된다.</p>
+
+<p>즉 i~j구간일 때 dp[j-1] - dp[i-2]</p>
+
+<h1 id="코드-10">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span>
+<span class="n">a</span><span class="o">=</span> <span class="mi">0</span>
+<span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100001</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">dp</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="n">s</span><span class="p">]</span><span class="o">+</span><span class="n">a</span>
+    <span class="n">a</span> <span class="o">+=</span> <span class="n">nums</span><span class="p">[</span><span class="n">s</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+    <span class="n">i</span><span class="p">,</span><span class="n">j</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">strip</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-8">💡시간복잡도</h1>
+
+<p>n</p>
+
+<h1 id="느낀점-or-기억할정보-9">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>점화식을 구할 때, 규칙성을 찾아내기 위하여 비슷한 값을 증가하여 구해보자.</li>
+</ul>
+
+<h1 id="3-11726번-2xn-타일링">3. 11726번 2xn 타일링</h1>
+
+<blockquote>
+  <p><strong>실버 III</strong></p>
+
+</blockquote>
+
+<h1 id="문제-분석-요약-11">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>점화식을 구하여 dp의 메모이제이션을 활용하여 푸는 문제</p>
+
+<h1 id="알고리즘-설계-11">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>점화식을 구하고, 구현한다.</p>
+
+<p>직사각형을 구한 것이 크기가 확장 됨에 따라 값이 확장되는 느낌이라 이전 값이 반복 될 것이라고 생각하여 dp라고 생각하고 풀었다.</p>
+
+<p>dp[i] = dp[i-1] + dp[i-2]</p>
+
+<p>하나하나 구한 이후, 각 항들의 관계를 예측하여 점화식을 뽑았다.</p>
+
+<h1 id="코드-11">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="k">if</span> <span class="n">n</span><span class="o">&gt;</span><span class="mi">3</span><span class="p">:</span>
+    <span class="n">dp</span><span class="p">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)])</span>
+<span class="k">if</span> <span class="n">n</span><span class="o">&gt;</span><span class="mi">3</span><span class="p">:</span> 
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">%</span><span class="mi">10007</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-9">💡시간복잡도</h1>
+
+<p>n</p>
+
+<h1 id="다른-풀이-1">💡 다른 풀이</h1>
+
+<p>list를 만들고 초기 값을 넣은 뒤, 거기에 100007로 나눈 값을 list에 append를 한다.</p>
+
+<p>이때 l[-2] + l[-1]으로 더해주는데, -2는 뒤에서 2값, -1은 뒤에서 1 값이므로 즉, 현재 만들어진 list가 n이 들어가기 전이므로 맨 마지막 값은 n-1일 것이기 때문이다.</p>
+
+<h1 id="느낀점-or-기억할정보-10">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>점화식을 구할 때, 규칙성을 찾아내기 위하여 비슷한 값을 증가하여 구해보자.</li>
+</ul>
+
+<h1 id="4-11726번-2xn-타일링-2">4. 11726번 2xn 타일링 2</h1>
+
+<blockquote>
+  <p><strong>실버 III</strong></p>
+
+</blockquote>
+
+<h1 id="문제-분석-요약-12">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>점화식을 구하여 dp의 메모이제이션을 활용하여 푸는 문제</p>
+
+<h1 id="알고리즘-설계-12">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>점화식을 구하고, 구현한다.</p>
+
+<p>직사각형을 구한 것이 크기가 확장 됨에 따라 값이 확장되는 느낌이라 이전 값이 반복 될 것이라고 생각하여 dp라고 생각하고 풀었다.</p>
+
+<p>dp[i] = dp[i-1] + dp[i-2]</p>
+
+<p>하나하나 구한 이후, 각 항들의 관계를 예측하여 점화식을 뽑았다.</p>
+
+<h1 id="코드-12">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="nb">input</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">11</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">dp</span><span class="p">.</span><span class="n">append</span><span class="p">((</span><span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">%</span><span class="mi">10007</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-10">💡시간복잡도</h1>
+
+<p>n</p>
+
+<p>2024년 4월 27일</p>
+
+<h1 id="1-17626번-four-squares">1. 17626번 Four Squares</h1>
+
+<blockquote>
+  <p><strong>실버 III</strong></p>
+
+</blockquote>
+
+<h1 id="문제-분석-요약-13">💡<strong>문제 분석 요약</strong>
+</h1>
+
+<p>메모이제이션을 활용한 dp문제</p>
+
+<h1 id="알고리즘-설계-13">💡<strong>알고리즘 설계</strong>
+</h1>
+
+<p>dp[숫자] = 제곱 수로 나타낼 수 있는 숫자 합의 최솟값</p>
+
+<p>규칙은</p>
+
+<p>dp[2] =   $1^2$ +  $1^2$ = 2</p>
+
+<p>dp[3] = $1^2+1^2+1^2$ = 3</p>
+
+<p>dp[4]= $2^2+2^2$ = 2</p>
+
+<p>dp[5] = dp[4]+dp[1] = 2</p>
+
+<p>5는 제곱수 1과 4로 각각 뺏을 때 4,1이 나오고 dp[4]와 dp[1]에 +1</p>
+
+<p>dp[6]에서 6은 1과 4로 뺏을 때 5와 2가 나오고, dp[5]=2, dp[2]=2이므로 여기에 +1한 값 즉, 3</p>
+
+<p>dp [11]은 1,4,9를 각 빼면 dp[10],dp[7],dp[9], 여기에 각각 1을 더하면 3,5,3이므로 최솟값인 3이 정답.</p>
+
+<p>다만  pypy3으로 돌려야 한다.</p>
+
+<h1 id="코드-13">💡코드</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">n</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+<span class="n">dp</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">12</span>
+<span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">dp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">dp</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span> 
+    <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+    
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">ans</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="시간복잡도-11">💡시간복잡도</h1>
+
+<p>n</p>
+
+<h1 id="틀린-이유-4">💡 틀린 이유</h1>
+
+<p>dp인것 같았으나 어떤 규칙이 있는지 알지 못했다. 처음에는 나눈 값을 내림으로 하여 제일 가까운 제곱수를 빼는 방식으로 했으나 예외가 발생하였다. dp값을 제곱수로 나타내는 것까지 고민했으나 이것을 어떻게 조합해야 최솟값을 발생하는 지 몰라서 답을 보았다.</p>
+
+<p>답은 dp에 제곱수들의 합의 최소 수량을 넣어 구한다.</p>
+
+<h1 id="느낀점-or-기억할정보-11">💡 느낀점 or 기억할정보</h1>
+
+<ul>
+  <li>다양하게 점화식을 뽑아내보자. 값 자체인지 값을 활용한 값인지..</li>
+</ul>
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<a class="previous" href="/jekyll-theme-yat/baekjoon/2024/04/15/3weeks.html" title="2024.04-3">2024.04-3</a><a class="next" href="/jekyll-theme-yat/baekjoon/2024/05/03/11053.html" title="11053번 가장 긴 증가하는 부분 수열">11053번 가장 긴 증가하는 부분 수열...</a>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li class="">
+          <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/27/1074.html" title="1074번 Z">
+            1074번 Z<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/06/12/9019.html" title="9019번 DSLR">
+            9019번 DSLR<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/jekyll-theme-yat/baekjoon/2024/05/18/1697.html" title="1931번 회의실 배정">
+            1931번 회의실 배정<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/jekyll-theme-yat/book/2024/04/12/designtrap.html" title="디자인트랩">
+            디자인트랩<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+</ul>
+    </div>
+<div class="post-comments">
+<div id="utterances-placeholder"></div>
+<script>
+  const utterancesThemeFromDataTheme = () => {
+    const dataTheme = document.documentElement.getAttribute('data-theme');
+    return `github-${dataTheme}`;
+  };
+
+  const setUtterancesTheme = () => {
+    const iframe = document.querySelector('.utterances-frame');
+    if (iframe) {
+      const message = {
+        type: 'set-theme',
+        theme: utterancesThemeFromDataTheme()
+      };
+      iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+    }
+  }
+
+  // dynamic change
+  const observer = new MutationObserver((mutationsList, observer) => {
+    for (let mutation of mutationsList) {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+        setUtterancesTheme();
+      }
+    }
+  });
+  observer.observe(document.documentElement, { attributes: true, childList: false, subtree: false });
+
+  let utterancesScript = document.createElement('script');
+  utterancesScript.async = true;
+  utterancesScript.src = 'https://utteranc.es/client.js';
+  utterancesScript.crossOrigin = 'anonymous';
+  utterancesScript.setAttribute('issue-term', 'pathname');
+  utterancesScript.setAttribute('label', '');
+  utterancesScript.setAttribute('repo', 'Yubeenpark/Yubeenpark.github.io');
+  utterancesScript.setAttribute('theme', utterancesThemeFromDataTheme());
+
+  const placeholder = document.getElementById('utterances-placeholder');
+  placeholder.parentNode.replaceChild(utterancesScript, placeholder);
+</script>
+</div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Unpublished Work <span class="copyleft">©</span> 2017-2024 Yubeenpark</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/jekyll-theme-yat/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
