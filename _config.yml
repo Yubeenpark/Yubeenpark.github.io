@@ -24,6 +24,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+remote_theme: "jeffreytse/jekyll-theme-yat"
+
 title: Nutty
 email: yoobinpark@gmail.com
 author: Yubeenpark
