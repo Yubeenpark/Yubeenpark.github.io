@@ -1,10 +1,15 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gemspec
+#gemspec
 
-ruby '3.2.0'
-
-gem 'jekyll', '~> 4.2.0'
 gem 'github-pages', group: :jekyll_plugins
-gem 'bundler', '~> 2.4'
+
+"jekyll", "~> 3.9" 
+"jekyll-feed", "~> 0.9"
+"jekyll-seo-tag", "~> 2.1"
+"jekyll-sitemap", "~> 1.3"
+"jekyll-paginate", "~> 1.1"
+"jekyll-spaceship", "~> 0.2"
+"bundler", ">= 1.6", "< 3.0"
+"rake", ">= 12.0", "< 13.0"
