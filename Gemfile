@@ -13,3 +13,4 @@ gem "jekyll-paginate", "~> 1.1"
 gem "jekyll-spaceship", "~> 0.2"
 gem "bundler", ">= 1.6", "< 3.0"
 gem "rake", ">= 12.0", "< 13.0"
+gem 'nokogiri', '< 1.16.2'
