@@ -3,8 +3,8 @@ layout: post
 title: 블로그 테마 변경
 subtitle: 그냥 유명한걸 쓰자
 excerpt_image: /assets/images/posts/change.png
-categories: React
-tags: [React,Frontend,노마드코더]
+categories: Daily
+tags: [일기]
 
 ---
 ![사진](/assets/images/posts/change.png)
