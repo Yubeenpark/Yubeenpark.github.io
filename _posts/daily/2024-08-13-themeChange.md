@@ -8,7 +8,6 @@ tags: [일기]
 
 ---
 ![사진](/assets/images/posts/change.png)
-### 블로그 테마 변경
 
 # 계기
 
