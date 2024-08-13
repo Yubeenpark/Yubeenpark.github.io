@@ -42,21 +42,21 @@ author: Yubeenpark
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+copyright: "Copyright 2015-{currentYear}. {author} All data cannot be copied without permission."
 
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: 개발과 취미를 이것저것 기록해나가는 블로그입니다. # this means to ignore newlines until "baseurl:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
 domain: Yubeenpark.github.io
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yubeenpark.github.io" # the base hostname & protocol for your site, e.g. https://example.com
-favicon: "" # the favicon for your site
+favicon: "/assets/images/nutty_icon.png"
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 yat:
-  date_format: "%b %d, %Y"
+  date_format: "%Y-%m-%d"
 
 # If you want more debug log, you can set true
 # debug: false
@@ -78,6 +78,9 @@ goatcounter_code: nuttyCheck
 
 # If you want to generate website sitemap, you can set true
 sitemap: true
+
+
+permalink: /:categories/:title
 
 # If you want to change site language, you can set lang option
 lang: "ko"  # default lang is en
