@@ -1,2 +1,3 @@
 Welcome to my Blog!
-<a href = "https://yubeenpark.github.io/"></a>GO TO BLOG
+
+###[GO TO BLOG](https://yubeenpark.github.io/)
