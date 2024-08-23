@@ -15,21 +15,18 @@ tags: [Programmers]
 - Trello, Jira, Notion과 같은 협업 툴과 agile 방법론
 - 스크럼, 플래닝을 활용해서 목표를 달성해야겠다.
 
-[협업 툴](https://yubeenpark.github.io/programmers/2week)
 
 ### [2. 웹 서비스의 이해](https://yubeenpark.github.io/programmers/web)
 
 - web, 클라이언트, 서버의 개념
 - 프론트엔드 3대장 (HTML, CSS, Javascript)
 
-[웹 서비스 이해](https://yubeenpark.github.io/programmers/web)
 
 ### [3. 웹 서비스의 이해(2)](https://yubeenpark.github.io/programmers/2week3)
 
 - 백엔드, 서버, 데이터베이스의 개념
 - node.js를 활용해서 서버 여는 법
 
-[웹 서비스 이해(2)](https://yubeenpark.github.io/programmers/2week3)
 
 ### [4. 웹 서비스의 이해(3)](https://yubeenpark.github.io/programmers/2week5)
 
@@ -37,10 +34,8 @@ tags: [Programmers]
 - Docker로 mariaDB 설치
 - .gitignore
 
-[웹 서비스 이해(3)](https://yubeenpark.github.io/programmers/2week5)
 
 ## Review
-
 ---
 
 ### ☑️목표
