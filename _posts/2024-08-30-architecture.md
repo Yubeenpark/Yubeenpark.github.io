@@ -71,6 +71,8 @@ tags: [architecture, software-Architecture]
 # 자주 쓰는 패턴
 
 ## 1. MVC
+<p align="center"><img src = https://media.licdn.com/dms/image/D5612AQHBlf7-k71W4g/article-cover_image-shrink_720_1280/0/1680876252211?e=2147483647&v=beta&t=tVrAgYVX6m7gXkbMtUKIOKH9WByhT570STp2YgZLV6Y  height="200px" width="300px">
+
 
 - 구성요소
     1. Model
@@ -93,6 +95,7 @@ tags: [architecture, software-Architecture]
     대규모 애플리케이션에서 View와 Controller 간의 의존성이 증가 가능성
 
 ## MVP
+<p align="center"><img src = https://user-images.githubusercontent.com/52276038/85027902-692d6100-b1b5-11ea-8f9e-3a7c4eb19970.png  height="200px" width="300px">
 
 - 구성요소
     1. Model
@@ -115,3 +118,35 @@ tags: [architecture, software-Architecture]
 - 단점
     - Controller가 복잡해질 수 있고, 
     대규모 애플리케이션에서 View와 Controller 간의 의존성이 증가 가능성 O
+
+    ## MVVM
+    <p align="center"><img src = https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/MVVMPattern.png/500px-MVVMPattern.png height="200px" width="600px">
+
+
+
+- **구성요소**
+    1. **Model**
+        - 애플리케이션의 데이터와 비즈니스 로직을 관리.
+            - 데이터의 상태 유지, 데이터 처리 및 데이터베이스와의 상호작용 담당.
+            - 다른 레이어와 독립적으로 동작하며, 도메인 로직을 캡슐화.
+    2. **View**
+        - 사용자에게 보여지는 인터페이스 담당.
+            - 화면에 데이터를 표시하고 사용자의 입력을 받는 역할.
+            - 로직을 포함하지 않으며, 단순히 ViewModel과의 데이터 바인딩을 통해 동작.
+    3. **ViewModel**
+        - View와 Model 간의 상호작용을 중개.
+            - View의 상태를 관리하고, Model로부터 데이터를 받아와 View에 필요한 형태로 변환.
+            - 커맨드, 데이터 바인딩 등을 사용하여 View와의 상호작용을 관리.
+            - View와는 양방향 데이터 바인딩을 통해 실시간으로 데이터를 주고받음.
+- **작동방식**
+    1. 사용자가 View와 상호작용하면, View는 ViewModel에 바인딩된 속성들을 업데이트.
+    2. ViewModel은 필요한 경우 Model을 업데이트하거나 데이터를 요청.
+    3. Model의 데이터 변경 사항이 ViewModel을 통해 View에 반영되고, View는 이를 사용자에게 표시.
+    4. View와 ViewModel은 양방향 데이터 바인딩을 통해 실시간으로 상호작용.
+- **장점**
+    - View와 Model 간의 강한 결합을 피하고, 코드의 모듈화를 통해 유지보수성이 높아짐.
+    - ViewModel을 통한 데이터 바인딩으로 인해 View의 코드가 단순해지고 테스트가 용이해짐.
+    - UI 코드와 비즈니스 로직이 분리되어, 개발자와 디자이너 간의 협업이 수월해짐.
+- **단점**
+    - 데이터 바인딩을 사용함에 따라, 데이터 흐름이 명시적이지 않아 디버깅이 어려울 수 있음.
+    - 작은 프로젝트에서는 오버헤드가 될 수 있으며, 초기 설정과 구조화에 더 많은 시간이 소요될 수 있음.
