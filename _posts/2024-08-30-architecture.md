@@ -3,6 +3,7 @@ layout: post
 title: 레이어드 아키텍쳐
 subtitle: 리액트 공부하기
 categories: Study
+excerpt_image: https://www.oreilly.com/api/v2/epubs/9781491971437/files/assets/sapr_0101.png
 tags: [architecture, software-Architecture]
 
 ---
@@ -24,6 +25,7 @@ tags: [architecture, software-Architecture]
     - 잠재적 보안 취약점을 줄이기 위해
 
 # layerd architecture
+![mvc](https://www.oreilly.com/api/v2/epubs/9781491971437/files/assets/sapr_0101.png){: .align-center width=400 height=200}
 
 ## 설명
 
@@ -39,11 +41,11 @@ tags: [architecture, software-Architecture]
     
     : 사용자 상호작용 처리, 사용자 입력 수집 등
     
-2. **Business Logic Layer** : 애플리케이션의 핵심 로직 처리
+2. **Business Layer** : 애플리케이션의 핵심 로직 처리 (데이터의 영속성 처리)
     
     : 재고 관리, 주문 처리 등 논리 관리
     
-3. **Data Access Layer** : 데이터베이스와의 상호작용 처리
+3. **Persistence Layer** : 데이터베이스와의 상호작용 처리
     
     : DB와 상호 작용하여 정보 검색, 정보 저장
     
@@ -71,7 +73,7 @@ tags: [architecture, software-Architecture]
 # 자주 쓰는 패턴
 
 ## 1. MVC
-![mvc](https://media.licdn.com/dms/image/D5612AQHBlf7-k71W4g/article-cover_image-shrink_720_1280/0/1680876252211?e=2147483647&v=beta&t=tVrAgYVX6m7gXkbMtUKIOKH9WByhT570STp2YgZLV6Y){: .align-center width=400 height=200}
+![mvc](https://media.licdn.com/dms/image/D5612AQHBlf7-k71W4g/article-cover_image-shrink_720_1280/0/1680876252211?e=2147483647&v=beta&t=tVrAgYVX6m7gXkbMtUKIOKH9WByhT570STp2YgZLV6Y){: .align-center width=300 height=200}
 
 - 구성요소
     1. Model
