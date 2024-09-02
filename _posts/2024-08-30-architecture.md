@@ -71,7 +71,7 @@ tags: [architecture, software-Architecture]
 # 자주 쓰는 패턴
 
 ## 1. MVC
-![mvc](https://media.licdn.com/dms/image/D5612AQHBlf7-k71W4g/article-cover_image-shrink_720_1280/0/1680876252211?e=2147483647&v=beta&t=tVrAgYVX6m7gXkbMtUKIOKH9WByhT570STp2YgZLV6Y){: .align-center width=800 height=500}
+![mvc](https://media.licdn.com/dms/image/D5612AQHBlf7-k71W4g/article-cover_image-shrink_720_1280/0/1680876252211?e=2147483647&v=beta&t=tVrAgYVX6m7gXkbMtUKIOKH9WByhT570STp2YgZLV6Y){: .align-center width=200 height=400}
 
 - 구성요소
     1. Model
@@ -93,8 +93,8 @@ tags: [architecture, software-Architecture]
     - Controller가 복잡해질 수 있고, 
     대규모 애플리케이션에서 View와 Controller 간의 의존성이 증가 가능성
 
-## MVP
-<p align="center"><img src = https://user-images.githubusercontent.com/52276038/85027902-692d6100-b1b5-11ea-8f9e-3a7c4eb19970.png  height="200px" width="300px"></p>
+## 2. MVP
+![mvp](https://user-images.githubusercontent.com/52276038/85027902-692d6100-b1b5-11ea-8f9e-3a7c4eb19970.png){: .align-center width=300 height=200}
 
 - 구성요소
     1. Model
@@ -118,9 +118,8 @@ tags: [architecture, software-Architecture]
     - Controller가 복잡해질 수 있고, 
     대규모 애플리케이션에서 View와 Controller 간의 의존성이 증가 가능성 O
 
-    ## MVVM
-    <p align="center"><img src = https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/MVVMPattern.png/500px-MVVMPattern.png height="200px" width="600px"></p>
-
+## 3. MVVM
+![mvvm](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/MVVMPattern.png/500px-MVVMPattern.png){: .align-center width=600 height=200}
 
 
 - **구성요소**
