@@ -71,7 +71,7 @@ tags: [architecture, software-Architecture]
 # 자주 쓰는 패턴
 
 ## 1. MVC
-![mvc](https://media.licdn.com/dms/image/D5612AQHBlf7-k71W4g/article-cover_image-shrink_720_1280/0/1680876252211?e=2147483647&v=beta&t=tVrAgYVX6m7gXkbMtUKIOKH9WByhT570STp2YgZLV6Y){: .align-center width=200 height=400}
+![mvc](https://media.licdn.com/dms/image/D5612AQHBlf7-k71W4g/article-cover_image-shrink_720_1280/0/1680876252211?e=2147483647&v=beta&t=tVrAgYVX6m7gXkbMtUKIOKH9WByhT570STp2YgZLV6Y){: .align-center width=400 height=200}
 
 - 구성요소
     1. Model
