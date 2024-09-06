@@ -1,3 +1,3 @@
 Welcome to my Blog!
 
-[GO TO BLOG]([sgruri blog](https://sguri.site/))
+[GO TO BLOG]([sguri blog](https://sguri.site/))
