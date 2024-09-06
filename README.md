@@ -1,3 +1,3 @@
 Welcome to my Blog!
 
-[GO TO BLOG](https://yubeenpark.github.io/)
+[GO TO BLOG]([sguri blog](https://sguri.site/))
