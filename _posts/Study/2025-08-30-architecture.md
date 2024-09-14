@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 레이어드 아키텍쳐
-subtitle: 리액트 공부하기
+subtitle: mvc, mvp, mvvm
 excerpt_image: https://www.oreilly.com/api/v2/epubs/9781491971437/files/assets/sapr_0101.png
 categories: Study
 tags: [architecture, software-Architecture]
