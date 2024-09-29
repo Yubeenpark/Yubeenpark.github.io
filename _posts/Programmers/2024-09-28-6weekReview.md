@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5주차 회고록
+title: 6주차 회고록
 subtitle: 유효성 검사
 excerpt_image: https://grepp-programmers.s3.amazonaws.com/production/file_resource/6737/Dev_Thumnail_Web_Full_Stack_4th.png
 categories: Programmers
