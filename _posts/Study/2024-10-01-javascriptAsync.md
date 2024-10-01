@@ -4,7 +4,7 @@ title:  JavaScript와 비동기
 subtitle: 싱글 스레드, 비동기 처리
 categories: Study
 tags: [비동기, JavaScript, Thread]
-excerpt_image: https://commons.wikimedia.org/wiki/File:Unofficial_JavaScript_logo_2.svg
+excerpt_image: https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png?20141107110902
 ---
 
 # JavaScript
