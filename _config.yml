@@ -48,9 +48,9 @@ description: 개발과 취미를 이것저것 기록해나가는 블로그입니
 #   Write an awesome description for your new site here. You can edit this
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
-domain: Yubeenpark.github.io
+domain: sguri
 #baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yubeenpark.github.io" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://sguri.site/" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "/assets/images/nutty_icon.png"
 
 # Yat date format
@@ -79,11 +79,10 @@ goatcounter_code: nuttyCheck
 # If you want to generate website sitemap, you can set true
 sitemap: true
 
-
 permalink: /:categories/:title
 
 # If you want to change site language, you can set lang option
-lang: "ko"  # default lang is en
+lang: "ko" # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
