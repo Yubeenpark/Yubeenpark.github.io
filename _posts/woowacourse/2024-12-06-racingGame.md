@@ -1,9 +1,9 @@
 ---
 layout: post
 title: [7기] 우테코 프리코스 코드 리팩토링
-subtitle: <javascript> 2주차 racingCar
+subtitle: javascript 2주차 racingCar
 excerpt_image: https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Ff71cbdcd-b763-41af-9bbb-42abdb18bd6a%2F9a492b46-973c-4d63-af79-b948e97b2391%2F%25E1%2584%258B%25E1%2585%25AE%25E1%2584%258B%25E1%2585%25A1%25E1%2584%2592%25E1%2585%25A1%25E1%2586%25AB%25E1%2584%2590%25E1%2585%25A6%25E1%2584%258F%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25A9%25E1%2584%2589%25E1%2585%25B3-2025-%25E1%2584%2589%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%258B%25E1%2585%25B5%25E1%2586%25B8%25E1%2584%2589%25E1%2585%25A2%25E1%2586%25BC-%25E1%2584%2586%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25B5%25E1%2586%25B8-%25E1%2584%2591%25E1%2585%25A9%25E1%2584%2589%25E1%2585%25B3%25E1%2584%2590%25E1%2585%25A5_outline.png&blockId=8e79f541-d498-4c2a-9e85-2f60c433a990
-categories: woowacourse
+categories: Woowacourse
 tags: [woowacourse,우테코]
 ---
 
