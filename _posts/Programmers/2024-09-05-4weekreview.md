@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 4주차 회고록
-subtitle: API test, Javascript
+subtitle: API test, JavaScript
 excerpt_image: https://grepp-programmers.s3.amazonaws.com/production/file_resource/6737/Dev_Thumnail_Web_Full_Stack_4th.png
 categories: Programmers
 tags: [Programmers]
@@ -48,7 +48,7 @@ tags: [Programmers]
 - 생각하며 정리하기
 - 사이드 프로젝트 시작하기 (프론트엔드)
 - Next.js에 대해 공부하기
-- javascript 공부 및  typescript에 대한 이해
+- javascript 공부 및 typescript에 대한 이해
 - 코테 일주일에 3개는 풀기!!!! 꼭!!!
 
 ### ✨무엇을 배웠는가
@@ -57,15 +57,15 @@ tags: [Programmers]
 - ForEach() vs map()
 - Object.fromEntries(arr),Object.entries(obj) 를 활용하여 객체와 Map,array 로 전환하는 법
 - Javascript 강제 형 변환
-    - 동등 연산자, 일치 연산자
+  - 동등 연산자, 일치 연산자
 - Case naming convention의 종류
 - Destructuring Assignment
 
 ### ⚠️이슈
 
-- express-generator 설치 후  express 스크립트 실행 불가
+- express-generator 설치 후 express 스크립트 실행 불가
 - Map to JSON
-- req.body  Cannot read properties of undefined …
+- req.body Cannot read properties of undefined …
 
 ### 💬피드백
 
