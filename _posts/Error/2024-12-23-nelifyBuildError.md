@@ -2,7 +2,7 @@
 layout: post
 title: nelify 빌드 오류
 subtitle: 대소문자
-excerpt_image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/147px-Netlify_logo.svg.png?20180815190440
+excerpt_image: https://searchvectorlogo.com/wp-content/uploads/2023/06/netlify-logo-vector-2023.png
 categories: Error
 tags: [Error, nelify, build]
 ---
