@@ -2,12 +2,10 @@
 layout: post
 title: CRA create-react-app typescript 오류
 subtitle: react19 error, npm
-excerpt_image: https://nomadcoders.co/_next/image?url=https%3A%2F%2Fd1telmomo28umc.cloudfront.net%2Fmedia%2Fpublic%2Fthumbnails%2Freact-for-beginners.jpeg&w=750&q=75
-categories: React
+excerpt_image: https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb2G0T4%2Fbtryy2p6DPA%2FBPgIlizCBiqdGZQupFFL51%2Fimg.png
+categories: Error
 tags: [React, npm, CRA, Vite, Build]
 ---
-
-CRA create-react-app typescript 오류
 
 ### 오류 상황
 
