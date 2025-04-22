@@ -64,20 +64,39 @@ body div#main-content article.post h2.headline {
 
 불필요한 애니메이션을 줄이자. 또한 특정 속성은 적용시 reflow(repaint)를 유발하기에 사용하지 않는게 좋다.
 
+### **리플로우(Reflow)와 리페인트(Repaint)**
+
+**reflow**
+레이아웃에 영향을 주는 속성을 변경할 시, 브라우저가 전체, 일부의 DOM요소들의 위치와 크기를 계산하는 것.
+
+**리플로우가 일어나는 상황**
+
+- DOM 구조 변경 (ex: 노드 추가/삭제)
+- 요소 크기/위치 변경 (`width`, `height`, `top`, `left` 등)
+- 폰트 크기 변경
+- 브라우저 창 크기 변경
+
+**Repaint
+스타일 변경으로 다시 화면에 그리는 것 ex) 색상, 배경색, 그림자와 같은 스타일 변경**
+
+DOM 변경이나 스타일 변경 등 **레이아웃을 변경**하면 리플로우 발생→ 리플로우 후에는 다시 **리페인트**로 이어지며 성능 저하 유발할 수 있다.
+
+따라서 다음과 같은 속성을 지양하는 게 좋다.
+
 <aside>
 ❌
 
-- Alter an element's dimensions, such as [`width`](https://developer.mozilla.org/en-US/docs/Web/CSS/width), [`height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height), [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border), and [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding).
-- Reposition an element, such as [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin), [`top`](https://developer.mozilla.org/en-US/docs/Web/CSS/top), [`bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/bottom), [`left`](https://developer.mozilla.org/en-US/docs/Web/CSS/left), and [`right`](https://developer.mozilla.org/en-US/docs/Web/CSS/right).
-- Change an element's layout, such as [`align-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content), [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items), and [`flex`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex).
-- Add visual effects that change the element geometry, such as [`box-shadow`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow).
+- 요소 크기 변경 예: `width`, `height`, `border`, `padding`
+- 형태에 영향을 주는 시각적 효과 추가. 예: `box-shadow`
+- 레이아웃 변경 예: `align-content`, `align-items`, `flex`
+- 재배치 예: `margin`, `top`, `bottom`, `left`, `right`
 </aside>
 
 대신 다음을 사용해보자.
 
-- [Transforms](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transforms)
-- [`opacity`](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
-- [`filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
+- Transforms
+- `opacity`
+- `filter`
 
 ### 폰트
 
@@ -93,4 +112,4 @@ body div#main-content article.post h2.headline {
 
 ### **Intersection Observer API**
 
-이 Intersection Obeserver로 브라우즈 뷰포트에 들어오고 나가는 시점을 사용자가 알게 만든다.
+이 Intersection Obeserver로 브라우즈 뷰포트에 들어오고 나가는 시점을 사용자가 알게 만
