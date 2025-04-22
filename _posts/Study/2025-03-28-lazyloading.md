@@ -87,8 +87,11 @@ DOM 변경이나 스타일 변경 등 **레이아웃을 변경**하면 리플로
 ❌
 
 - 요소 크기 변경 예: `width`, `height`, `border`, `padding`
+
 - 형태에 영향을 주는 시각적 효과 추가. 예: `box-shadow`
+
 - 레이아웃 변경 예: `align-content`, `align-items`, `flex`
+
 - 재배치 예: `margin`, `top`, `bottom`, `left`, `right`
 </aside>
 
