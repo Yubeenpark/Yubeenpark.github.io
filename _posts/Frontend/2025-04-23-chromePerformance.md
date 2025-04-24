@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 성능 분석 방법 (chrome)
-subtitle: 크롬으로 성능 분석하기기
+subtitle: 크롬으로 성능 분석하기
 categories: Frontend
 tags: [frontend, performance]
 ---
