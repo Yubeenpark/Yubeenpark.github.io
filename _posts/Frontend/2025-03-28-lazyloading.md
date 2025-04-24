@@ -115,4 +115,4 @@ DOM 변경이나 스타일 변경 등 **레이아웃을 변경**하면 리플로
 
 ### **Intersection Observer API**
 
-이 Intersection Obeserver로 브라우즈 뷰포트에 들어오고 나가는 시점을 사용자가 알게 만
+이 Intersection Obeserver로 브라우즈 뷰포트에 들어오고 나가는 시점을 알 수 있음.
