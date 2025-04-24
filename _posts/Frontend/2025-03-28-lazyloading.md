@@ -2,7 +2,7 @@
 layout: post
 title: 프론트엔드 성능 개선- lazy loading
 subtitle: 필요할 때만 불러올까?
-categories: Study
+categories: Frontend
 tags: [frontend, lazy loading]
 ---
 
